@@ -1,0 +1,29 @@
+@import "./abstracts/mixins.scss";
+@import "./abstracts/variables.scss";
+html{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+        .container {
+            
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+
+            height: 100%;
+           
+            @include md {
+              width: 100%;
+              min-width: 100%;
+            }
+        }
+    
+}

@@ -1,42 +1,40 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React , {useState} from 'react'
+import headerStyles from "../styles/component/header.module.scss";
+import {Link} from 'gatsby'
+import Logo from "../assets/svgs/logo.svg"
+import {MdAndroid} from "@react-icons/all-files/md/MdAndroid"
+import {AiFillApple} from '@react-icons/all-files/ai/AiFillApple'
+export default function Header()
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+{
+  return(
+    <div className = {headerStyles.header}>
+      <div className = {headerStyles.nav}>
+      <Link to ="/" className= {headerStyles.logo}>
+        <Logo />
+      </Link>
+      <div className = {headerStyles.navlink}>
+        <Link to = "/">Our Journey </Link>
+        <Link to = "/">Products</Link>
+        <Link to = "/">Stories</Link>
+        <Link to = "/">Contact</Link>
+      </div>
+      <div className = {headerStyles.buttons}>
+        <Link to = "/">
+          <MdAndroid className = {headerStyles.android} />
         </Link>
-      </h1>
+        <Link to = "/">
+          <AiFillApple className = {headerStyles.apple} />
+        </Link>
+      </div>
+      <div className = {headerStyles.menuIcon}>
+    
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </div>
     </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+  )
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header

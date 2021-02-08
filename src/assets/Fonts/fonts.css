@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Roobert-Medium';
+  src: url('./Roobert-Medium.otf');
+}
+@font-face {
+  font-family: 'Roobert Bold';
+  src: url('./Roobert-Bold.otf');
+}
+@font-face {
+  font-family: 'Circular Black';
+  src: url('./CircularStd-Black.otf');
+}
+@font-face {
+  font-family: 'Corsica-semibold';
+  src: url('./CorsicaSX-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('./raleway.light.ttf');
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('./ProximaNova-Regular.otf');
+}
+@font-face {
+  font-family: 'Proxima Thin';
+  src: url('./Proxima Nova Thin.otf');
+}
+@font-face {
+  font-family: 'Hk Grotesk';
+  src: url('./HKGrotesk-Medium.otf');
+}
+@font-face{
+  font-family: 'NueGrostek';
+  src: url('./NeuzeitGro-Reg.ttf');
+}
+@font-face{
+  font-family: "NueBold";
+  src: url('./NeuzeitGro-Bol.ttf');
+}

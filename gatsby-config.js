@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Honest Farmer`,
+    description: `India's Fastest Agricultural Supply Chain`,
+    author: `@ankitvat`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,6 +13,34 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-scroll-reveal`,
+    {
+      resolve: `gatsby-plugin-scroll-reveal`,
+      options: {
+        threshold: 1,
+        once: true,
+        disable: false,
+
+        // Advanced Options
+        selector: '[data-sal]',
+        animateClassName: 'sal-animate',
+        disabledClassName: 'sal-disabled',
+        rootMargin: '0% 50%',
+        enterEventName: 'sal:in',
+        exitEventName: 'sal:out',
+      },
+    },
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sass`,
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/,
+        },
+      },
+    },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

@@ -1,0 +1,99 @@
+@import "../abstracts/mixins.scss";
+@import "../abstracts/variables.scss";
+@import "../../assets/Fonts/fonts.css";
+$grey1: #141414;
+$font1: 'NueBold';
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+
+    .section0{
+        width: 96%;
+        height: 40vh;
+        background-color:$grey1 ;
+        h1{
+            font-family: $font1 ;
+            color: white;
+            text-align: center;
+            margin-top: 2%;
+        }
+    }
+
+    .section1{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2.1%;
+        .row1{
+            width:54%;
+            background-color: aqua;
+            height: 75vh;
+            background-image: url('../../images/image1.jpg');
+            background-size: contain;
+            h1{
+                font-size: 1.5rem;
+                font-family: $font1;
+                text-transform: uppercase;
+                padding-left:30px;
+                padding-top: 15px;
+                color: white;
+            }
+        }
+        .row2{
+            width: 40%;
+            background-color: beige;
+            height: 75vh;
+            margin-left: 2.1%;
+            background-image: url('../../images/image4.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            h1{
+                font-size: 1.5rem;
+                font-family: $font1;
+                text-transform: uppercase;
+                padding-left:30px;
+                padding-top: 15px;
+                color: black;
+            }
+        }
+    }
+
+    .section2{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2.1%;
+        .row3{
+            width: 40%;
+            background-color: red;
+            height: 75vh;
+            
+
+        }
+        .row4{
+            width:54%;
+            background-color: green;
+            height: 75vh;
+            margin-left: 2.1%;
+
+        }
+    }
+
+    .section3{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2.1%;
+        .row5{
+            width:54%;
+            background-color: yellowgreen;
+            height: 75vh;
+        }
+        .row6{
+            width: 40%;
+            background-color: pink;
+            height: 75vh;
+            margin-left: 2.1%;
+        }
+    }
+    
+}

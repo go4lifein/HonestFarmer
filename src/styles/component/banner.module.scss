@@ -1,0 +1,94 @@
+@import "../../assets/Fonts/fonts.css";
+@import "../abstracts/_mixins.scss";
+@import "../abstracts/variables.scss";
+
+$font1: "Roobert-Medium";
+$font2: 'Circular Black';
+
+$font3: 'NueBold';
+$lightblack : #363c4c ;
+
+
+.hero{
+    height: 100vh;
+    display: flex;
+    margin-left: 3%;
+    flex-direction: row;
+    margin-top: 7%;
+    width: 100%;
+    
+    .heroLeft{
+        font-family:$font3 ;
+        
+        font-size: 3.2rem;
+        width: 800px;
+        height: 500px;
+        text-transform: uppercase;
+        text-align: justify;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        p{
+            font-size: 1.2rem;
+            text-transform: none;
+            margin-top: 6%;
+        }
+        .buttons{
+            display: flex;
+            flex-direction: row;
+            margin-top: -3%;
+        }
+
+        .btn{
+            font-size: 1.2rem;
+            margin-top: 10%;
+            transition: all 0.5s;
+            text-decoration: none;
+            border: 2px solid black;
+            color: black;
+            padding: 15px 12px 15px 12px;
+            text-align: center;
+            width: 250px;
+
+            &:hover{
+
+            }
+
+            .arrow{
+                margin-left: 1%;
+                position: absolute;
+                
+            }
+        }
+        .btn2{
+            font-size: 1.2rem;
+            margin-top: 10%;
+            margin-left: 5%;
+            text-decoration: none;
+            border: 2px solid black;
+            color: black;
+            padding: 15px 12px 15px 12px;
+            text-align: center;
+            width: 250px;
+            .arrow{
+                margin-left: 1%;
+                position: absolute;
+                
+            }
+        }
+        
+    }
+
+    .heroRight{
+        display: flex;
+        background-image: url('../../images/image1.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: 2%;
+        margin-top: 3%;
+        
+        width: 585px;
+        height: 500px;
+        
+    }
+}
