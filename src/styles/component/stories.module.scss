@@ -35,6 +35,9 @@ $font2 :'HK Grotesk';
         @include xsm {
             height: 18vh;
         }
+        @include xm {
+            height: 16vh;
+        }
 
         h1{
             font-family: $font1;
@@ -54,6 +57,9 @@ $font2 :'HK Grotesk';
             }
             @include sm {
                 font-size:0.5rem;
+            }
+            @include xm {
+                margin-top: 8%;
             }
         }
         .wrapper__btn{
@@ -89,6 +95,9 @@ $font2 :'HK Grotesk';
                 border: 1.5px solid black;
                 padding: 3px 3px 3px 3px ;
                 margin-left: 5.5%;
+            }
+            @include xm {
+                margin-left: 4%;
             }
         }
     }
