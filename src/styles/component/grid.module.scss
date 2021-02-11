@@ -2,22 +2,65 @@
 @import "../abstracts/variables.scss";
 @import "../../assets/Fonts/fonts.css";
 $grey1: #141414;
+$lightgrey : #e3e3e3;
 $font1: 'NueBold';
 
 .grid{
     display: flex;
     flex-direction: column;
     margin-left: 3%;
+    @include txl{
+        padding-left: 4%;
+        margin-top: -20%;
+    }
+    @include lg {
+        padding-left: 1%;
+        margin-top: -15%;
+    }
+    @include md {
+        position:relative;
+        margin-top: -10%;
+    }
+    @include sm {
+        margin-top: 15%;
+    }
+    @include xsm {
+        margin-top: 15%;
+    }
 
     .section0{
         width: 96%;
         height: 40vh;
-        background-color:$grey1 ;
+        @include txl{
+            height: 30vh;
+        }
+        @include lg {
+            height: 25vh;
+        }
+        @include md {
+            height: 20vh;
+        }
+        @include sm {
+            height: 20vh;
+        }
+        background-color:$lightgrey ;
         h1{
             font-family: $font1 ;
-            color: white;
+            color: black;
             text-align: center;
             margin-top: 2%;
+            @include txl{
+                margin-left: 6%;
+            }
+            @include lg {
+                font-size: 1.5rem;
+            }
+            @include md {
+                font-size: 1rem;
+            }
+            @include sm {
+                font-size: 0.8rem;
+            }
         }
     }
 
@@ -25,12 +68,75 @@ $font1: 'NueBold';
         display: flex;
         flex-direction: row;
         margin-top: 2.1%;
-        .row1{
-            width:54%;
-            background-color: aqua;
+        @include sm {
+            flex-direction: column;
+            margin-top: 3.1%;
+        }
+           
+            .row1{
+               
+                width:54%;
+                height: 75vh;
+
+                background-image: url('../../images/image1.jpg');
+                background-size: cover;
+                background-position: center;
+                
+                  cursor: pointer;
+                  transition: all 0.5s;
+                  -webkit-transition: all .5s;
+                  -moz-transition: all .5s;
+                  -o-transition: all .5s;
+                  @include txl{
+                      height: 55vh;
+                  }
+                  @include lg {
+                      height: 50vh;
+                  }
+                  @include md {
+                      height: 45vh;
+                  }
+                  @include sm {
+                      height: 30vh;
+                      width: 96%;
+                  }
+                h1{
+                    font-size: 1.5rem;
+                    font-family: $font1;
+                    text-transform: uppercase;
+                    padding-left:30px;
+                    padding-top: 15px;
+                    color: white;
+                }
+            }
+            
+
+        
+      
+        .row2{
+            width: 40%;
+        
             height: 75vh;
-            background-image: url('../../images/image1.jpg');
-            background-size: contain;
+            margin-left: 2.1%;
+            background-image: url('../../images/image4.jpg');
+            background-size: cover;
+            background-position: center;
+            @include txl{
+                height: 55vh;
+            }
+            @include lg {
+                height: 50vh;
+            }
+            @include md {
+                height: 45vh;
+            }
+            @include sm {
+                height: 30vh;
+                width: 96%;
+                margin-top: 3.1%;
+                margin-left: 0%;
+            }
+            
             h1{
                 font-size: 1.5rem;
                 font-family: $font1;
@@ -40,60 +146,84 @@ $font1: 'NueBold';
                 color: white;
             }
         }
-        .row2{
-            width: 40%;
-            background-color: beige;
-            height: 75vh;
-            margin-left: 2.1%;
-            background-image: url('../../images/image4.jpg');
-            background-size: contain;
-            background-repeat: no-repeat;
-            h1{
-                font-size: 1.5rem;
-                font-family: $font1;
-                text-transform: uppercase;
-                padding-left:30px;
-                padding-top: 15px;
-                color: black;
-            }
-        }
     }
 
     .section2{
         display: flex;
         flex-direction: row;
         margin-top: 2.1%;
+        @include sm {
+            flex-direction: column;
+            margin-top: 3.1%;
+        }
+        
         .row3{
             width: 40%;
-            background-color: red;
+            background-image: url('../../images/image5.jpg');
+            background-size: cover;
             height: 75vh;
-            
+            @include txl{
+                height: 55vh;
+            }
+            @include lg {
+                height: 50vh;
+            }
+            @include md {
+                height: 45vh;
+            }
+            @include sm {
+                height: 30vh;
+                width: 96%;
+               
+                margin-left: 0%;
+            }
+            h1{
+                font-size: 1.5rem;
+                font-family: $font1;
+                text-transform: uppercase;
+                padding-left:30px;
+                padding-top: 15px;
+                color: white;
+                z-index: 5;
+            }
+          
 
         }
         .row4{
             width:54%;
-            background-color: green;
+            background-image: url('../../images/image6.jpg');
+            background-size: cover;
+            background-position: center;
+           
             height: 75vh;
             margin-left: 2.1%;
-
+            @include txl{
+                height: 55vh;
+            }
+            @include lg {
+                height: 50vh;
+            }
+            @include md {
+                height: 45vh;
+            }
+            @include sm {
+                height: 30vh;
+                width: 96%;
+                margin-top: 3.1%;
+                margin-left: 0%;
+            }
+            h1{
+                font-size: 1.5rem;
+                font-family: $font1;
+                text-transform: uppercase;
+                padding-left:30px;
+                padding-top: 15px;
+                color: white;
+                z-index: 5;
+            }
         }
     }
 
-    .section3{
-        display: flex;
-        flex-direction: row;
-        margin-top: 2.1%;
-        .row5{
-            width:54%;
-            background-color: yellowgreen;
-            height: 75vh;
-        }
-        .row6{
-            width: 40%;
-            background-color: pink;
-            height: 75vh;
-            margin-left: 2.1%;
-        }
-    }
+   
     
 }

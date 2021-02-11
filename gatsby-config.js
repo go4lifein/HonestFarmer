@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix:'/Honest-Farmer',
   siteMetadata: {
     title: `Honest Farmer`,
     description: `India's Fastest Agricultural Supply Chain`,

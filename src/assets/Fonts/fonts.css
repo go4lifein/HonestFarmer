@@ -38,3 +38,7 @@
   font-family: "NueBold";
   src: url('./NeuzeitGro-Bol.ttf');
 }
+@font-face{
+  font-family: "CircularStd";
+  src: url('./CircularStd-Book.ttf');
+}

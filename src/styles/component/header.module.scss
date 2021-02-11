@@ -11,13 +11,22 @@ $green1:#3DDC84;
     align-items: center;
 
 
+
     .nav{
         display: flex;
         position: fixed;
         width: 100%;
+        
         margin-left: 2.9%;
-        margin-top: 8%;
+        padding-top: 8%;
         z-index: 10;
+        @include lg 
+        {
+            margin-top: 4%;
+        }
+        @include sm {
+            margin-top: 15%;
+        }
         
     
     }
@@ -42,6 +51,7 @@ $green1:#3DDC84;
     .navlink{
         margin-left: 50%;
         margin-top: 2%;
+        z-index: 10;
         @include txl {
             margin-left: 50%;
             
@@ -85,7 +95,11 @@ $green1:#3DDC84;
             margin-top: 3.2%;
         }
         @include sm {
-            margin-left: 44%;
+            margin-left: 48%;
+            margin-top: 4%;
+        }
+        @include xsm {
+            margin-top: 3.6%;
         }
         
         .android
@@ -98,6 +112,7 @@ $green1:#3DDC84;
             @include sm {
                 font-size: 22px;
             }
+           
         }
         .apple{
             font-size: 30px;
@@ -117,8 +132,11 @@ $green1:#3DDC84;
         display: none;
         @include sm{
             display: block;
-            margin-top: 5%;
-            margin-left: 10%;
+            margin-top: 5.9%;
+            margin-left: 6%;
+        }
+        @include xsm {
+            margin-left: 4%;
         }
         span{
             margin-bottom: 0.3rem;

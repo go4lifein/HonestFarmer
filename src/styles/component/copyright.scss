@@ -1,0 +1,23 @@
+@import "../../assets/Fonts/fonts.css";
+@import "../abstracts/_mixins.scss";
+@import "../abstracts/variables.scss";
+$lightgrey :#9c9c9c;
+$font1:'NueBold';
+$font2 :'Circular Black';
+$lightblack : #000;
+$grey1 : #404040;
+.copy{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background-color: $lightblack ;
+    .section{
+        background-color: black;
+        p{
+            color: white;
+            font-family: $font2;
+            color: $grey1 ;
+            font-size: 13px;
+        }
+    }
+}

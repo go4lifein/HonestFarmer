@@ -1,6 +1,5 @@
 import React from 'react'
 import bannerStyles from "../styles/component/banner.module.scss"
-import Lemons from "../images/image1.jpg"
 import {Link} from 'gatsby'
 import {CgArrowLongRight} from "@react-icons/all-files/cg/CgArrowLongRight"
 
@@ -9,7 +8,8 @@ export default function Banner(){
     return(
         <div className = {bannerStyles.hero}>
             <div className = {bannerStyles.heroLeft}>
-                India's Fastest Agricultural<br></br>Supply Chain.
+                <h1>India's Fastest Agricultural<br></br>Supply Chain.</h1>
+            
 
                 <p>We deliver the freshest produce & milk in India.<br></br> From farm to table.</p>
           
@@ -24,9 +24,7 @@ export default function Banner(){
                
             </div>
             <div className = {bannerStyles.heroRight}>
-                   Hello
-
-                  
+                
                    </div>     
 
         </div>
