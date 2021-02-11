@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix:'/Honest-Farmer',
+  pathPrefix:'/HonestFarmerv3',
   siteMetadata: {
     title: `Honest Farmer`,
     description: `India's Fastest Agricultural Supply Chain`,
@@ -42,6 +42,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-offline`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

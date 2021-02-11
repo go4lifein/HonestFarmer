@@ -1,6 +1,5 @@
 {
   "name": "honest-farmer",
-   "homepage":"http://ankitvat.github.io/Honest-Farmer",
   "private": true,
   "description": "India's fastest Agricultural Supply Chain",
   "version": "0.2.0",
@@ -46,10 +45,8 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "serve": "gatsby serve",
-
-    "deploy": "gh-pages -d build"
-
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
