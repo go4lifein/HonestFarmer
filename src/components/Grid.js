@@ -6,9 +6,7 @@ export default function Grid()
 {
     return(
         <div className = {gridStyles.grid}>
-            <div className = {gridStyles.section0}>
-                <h1>Order Today , delivery by Tommorow.</h1>
-            </div>
+            
             <div className = {gridStyles.section1}>
                
                 <Link to ="/Farmers" className = {gridStyles.row1}>

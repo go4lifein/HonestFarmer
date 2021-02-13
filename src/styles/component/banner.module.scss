@@ -2,8 +2,8 @@
 @import "../abstracts/_mixins.scss";
 @import "../abstracts/variables.scss";
 
-$font1: "Roobert-Medium";
 $font2: 'Circular Black';
+$font1: 'CircularStd';
 
 $font3: 'NueBold';
 $lightblack : #363c4c ;
@@ -64,6 +64,7 @@ $lightgrey : #e3e3e3;
         p{
             font-size: 1.2rem;
             text-transform: none;
+            font-family: $font1;
             margin-top: 6%;
             @include lg {
                 font-size: 1rem;

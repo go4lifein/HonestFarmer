@@ -1,0 +1,67 @@
+@import "../../assets/Fonts/fonts.css";
+@import "../abstracts/_mixins.scss";
+@import "../abstracts/variables.scss";
+
+$font1:"CircularStd";
+$font2: "NueBold";
+$lightblue: #d1d8de;
+
+  .card{
+    font-family: $font1;
+    display: flex;
+    flex-direction: column;
+    
+    background-color: white;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    padding-left: 2%;
+    @include txl {
+        padding-bottom: -10%;
+
+    }
+    @include md {
+        padding-top: 10%;
+    }
+    @include sm {
+        padding-top: 15%;
+    }
+    h1{
+        font-weight: 400;
+        padding-top: 5%;
+        @include md {
+            font-size: 1.7rem;
+        }
+        @include sm {
+            display: flex;
+            
+            text-align: center;
+            font-size: 1.5rem;
+    
+        }
+       
+
+    }
+    p{
+        text-align: justify;
+        width: 45%;
+        color: #9a9a9a;
+        @include md {
+            width: 60%;
+            font-size: 0.9rem;
+        }
+        @include sm {
+            max-width: 80%;
+            padding-top: 10%;
+            font-size: 0.8rem;
+        }
+        span{
+            color: black;
+        }
+    }
+
+}
+
+.card:nth-child(2){
+    padding-top: -10%;
+}
