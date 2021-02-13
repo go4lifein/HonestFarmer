@@ -8,10 +8,10 @@ export default function Banner(){
     return(
         <div className = {bannerStyles.hero}>
             <div className = {bannerStyles.heroLeft}>
-                <h1>India's Fastest Agricultural<br></br>Supply Chain.</h1>
+                <h1>Food, Traceable now.</h1>
             
 
-                <p>We deliver the freshest produce & milk in India.<br></br> From farm to table.</p>
+                <p>We deliver the freshest produce in India.<br></br> From farm to table.</p>
           
                     <div className = {bannerStyles.buttons}>
                     <Link to ="/" className = {bannerStyles.btn}>

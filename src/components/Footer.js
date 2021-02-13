@@ -16,8 +16,9 @@ export default function Footer()
             <div className = {FooterStyles.section2}>
             <h1>Navigation</h1>    
             <Link to = "/page-2">Our Journey</Link>
-            <Link to = "/Farmers">Products</Link>
+            <Link to = "/Farmers">Our Farmers</Link>
             <Link to = "/">Stories</Link>
+            <Link to ="/">Traceability</Link>
             </div>        
             <div className = {FooterStyles.section3}>
                 <h1>Company</h1>
@@ -27,11 +28,10 @@ export default function Footer()
             </div>
             <div className = {FooterStyles.section4}>
                 <h1>Products</h1>
-                <Link>Dairy</Link>
-                <Link>Fruits & Vegetables</Link>
+                <Link>Fruits</Link>
+                <Link>Vegetables</Link>
                 <Link>Groceries</Link>
-                <Link>Ayurvedic</Link>
-                <Link>Bakery</Link>
+                <Link>Ayurveda</Link>
             </div>
             <div className = {FooterStyles.social}>
                 <h1>Follow Us</h1>
