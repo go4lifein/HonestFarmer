@@ -15,7 +15,7 @@ export default function Footer()
             </div> 
             <div className = {FooterStyles.section2}>
             <h1>Navigation</h1>    
-            <Link to = "/">Our Journey</Link>
+            <Link to = "/page-2">Our Journey</Link>
             <Link to = "/">Products</Link>
             <Link to = "/">Stories</Link>
             </div>        
@@ -50,4 +50,4 @@ export default function Footer()
             </div>
         </div>
     )
-}
+}   

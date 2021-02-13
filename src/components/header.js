@@ -15,7 +15,7 @@ export default function Header()
         <Logo />
       </Link>
       <div className = {headerStyles.navlink} nav = {nav}>
-        <Link to = "/">Our Journey </Link>
+        <Link to = "/page-2">Our Journey </Link>
         <Link to = "/">Products</Link>
         <Link to = "/">Stories</Link>
         <Link to = "/">Contact</Link>
