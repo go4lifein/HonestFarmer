@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'gatsby'
 import gridStyles from "../styles/component/grid.module.scss"
 
 export default function Grid()
@@ -10,23 +11,23 @@ export default function Grid()
             </div>
             <div className = {gridStyles.section1}>
                
-                <div className = {gridStyles.row1}>
+                <Link to ="/Products" className = {gridStyles.row1}>
                 <h1>Progressive Farmers</h1>
-                </div>
+                </Link>
                
-                <div className = {gridStyles.row2}>
+                <Link to = "/Products"className = {gridStyles.row2}>
                 <h1>Traceable Food</h1>
-                </div>
+                </Link>
             </div>
             <div className = {gridStyles.section2}>
-                <div className = {gridStyles.row3}>
+                <Link to ="/Products" className = {gridStyles.row3}>
                 <h1>Zero Waste</h1>
               
               
-                </div>
-                <div className = {gridStyles.row4}>
+                </Link>
+                <Link to = "/Products" className = {gridStyles.row4}>
                 <h1>Vedic Practices</h1>
-                </div>
+                </Link>
             </div>
             
         </div>

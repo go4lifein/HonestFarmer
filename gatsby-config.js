@@ -6,6 +6,7 @@ module.exports = {
     author: `@ankitvat`,
   },
   plugins: [
+    `gatsby-plugin-transition-link`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

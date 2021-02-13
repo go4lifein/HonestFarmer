@@ -7,10 +7,15 @@ $font2 :'Circular Black';
 $lightblack : #000;
 $grey1 : #404040;
 .copy{
-    width: 100%;
+    width: 103%;
     height: 10vh;
+    overflow-x: hidden;
     display: flex;
     background-color: $lightblack ;
+
+    @include sm {
+        width: 103%;
+    }
     .section{
         background-color: black;
         p{

@@ -3,14 +3,14 @@ import {Link } from 'gatsby'
 import Header from "../components/Header.js"
 import Footer from "../components/Footer.js"
 import Copyright from "../components/Copyright.js"
-import journeyStyles from "../styles/component/journey.module.scss"
+import journeyStyles from "../styles/pages/journey.module.scss"
 export default function SecondPage()
 {
   return(
     <div className = {journeyStyles.journey}>
       <Header / >
         <div className = {journeyStyles.innercontent}>
-          <p>Home / Our Journey</p>
+          <p><Link to = "/" className = {journeyStyles.link}>Home</Link> / Our Journey</p>
           <h1>Our Journey</h1>
           <p>How we deliver fresh greens from farm to table.</p>
          

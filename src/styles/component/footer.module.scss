@@ -11,6 +11,7 @@ $lightblack : #000;
     width: 100%;
     display: flex;
     flex-direction: row;
+    overflow-x: hidden;
     height: 60vh;
     background-color: $lightblack;
     @include txl {
@@ -20,9 +21,14 @@ $lightblack : #000;
     }
     @include md {
         height: 60vh;
+        width: 103% !important;
+        overflow-x: hidden;
+
+ 
     }
     @include sm {
         height: 100%;
+        width: 103%;
         flex-direction: column;
     }
 

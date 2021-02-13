@@ -68,6 +68,7 @@ $font1: 'NueBold';
         display: flex;
         flex-direction: row;
         margin-top: 2.1%;
+        
         @include sm {
             flex-direction: column;
             margin-top: 3.1%;
@@ -77,16 +78,19 @@ $font1: 'NueBold';
                
                 width:54%;
                 height: 75vh;
-
+                text-decoration: none;
                 background-image: url('../../images/image1.jpg');
                 background-size: cover;
                 background-position: center;
-                
                   cursor: pointer;
                   transition: all 0.5s;
                   -webkit-transition: all .5s;
                   -moz-transition: all .5s;
                   -o-transition: all .5s;
+
+                  &:hover{
+                    opacity: 0.8;
+                  }
                   @include txl{
                       height: 55vh;
                   }
@@ -115,12 +119,15 @@ $font1: 'NueBold';
       
         .row2{
             width: 40%;
-        
+            text-decoration:none;
             height: 75vh;
             margin-left: 2.1%;
             background-image: url('../../images/image4.jpg');
             background-size: cover;
             background-position: center;
+            &:hover{
+                opacity: 0.8;
+              }
             @include txl{
                 height: 55vh;
             }
@@ -162,6 +169,10 @@ $font1: 'NueBold';
             background-image: url('../../images/image5.jpg');
             background-size: cover;
             height: 75vh;
+            text-decoration:none;
+            &:hover{
+                opacity: 0.8;
+              }
             @include txl{
                 height: 55vh;
             }
@@ -194,8 +205,11 @@ $font1: 'NueBold';
             background-image: url('../../images/image6.jpg');
             background-size: cover;
             background-position: center;
-           
+            text-decoration: none;
             height: 75vh;
+            &:hover{
+                opacity: 0.8;
+              }
             margin-left: 2.1%;
             @include txl{
                 height: 55vh;
