@@ -4,7 +4,7 @@ import {Link} from 'gatsby'
 import Footer from "../components/Footer.js"
 import Copyright from "../components/Copyright.js"
 import productStyles from "../styles/pages/products.module.scss"
-export default function Products()
+export default function Farmers()
 {
   return(
     <div className = {productStyles.products}>
