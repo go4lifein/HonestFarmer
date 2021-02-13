@@ -20,13 +20,13 @@ export default function Grid()
                 </Link>
             </div>
             <div className = {gridStyles.section2}>
-                <Link to ="/Farmers" className = {gridStyles.row3}>
+                <Link to ="/ZeroWaste" className = {gridStyles.row3}>
                 <h1>Zero Waste</h1>
               
               
                 </Link>
                 <Link to = "/Farmers" className = {gridStyles.row4}>
-                <h1>Vedic Practices</h1>
+                <h1>Meet Our Farmers</h1>
                 </Link>
             </div>
             
