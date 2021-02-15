@@ -1,43 +1,33 @@
 import React, { useEffect, useRef, useState } from 'react'
-import MapStyles from "../styles/component/mapsection.module.scss"
-import mapboxgl, { Marker } from 'mapbox-gl'
-import "mapbox-gl/dist/mapbox-gl.css"
-import "../styles/map.css"
-//mapboxgl.accessToken = 'pk.eyJ1IjoiYW5raXR2YXQiLCJhIjoiY2treG9ndHFmMmlvOTJvcW5pNmdjemx5MCJ9.txYSSRyJBcUIclwQuFwDhA';
+import MapGL from 'react-map-gl';
 
+import "mapbox-gl/dist/mapbox-gl.css";
+import "../styles/map.css";
 
-const styles = {
-  width: "94%",
-  margin: "3%",
-  height: "calc(100vh - 80px)",
-  
-};
+const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN;
 
 const MapSection = () => {
-  const [map, setMap] = useState(null);
-  const mapContainer = useRef(null);
 
-  useEffect(() => {
-    mapboxgl.accessToken = 'pk.eyJ1IjoiYW5raXR2YXQiLCJhIjoiY2treG9ndHFmMmlvOTJvcW5pNmdjemx5MCJ9.txYSSRyJBcUIclwQuFwDhA';
-    const initializeMap = ({ setMap, mapContainer }) => {
-      const map = new mapboxgl.Map({
-        container: mapContainer.current,
-        style: "mapbox://styles/mapbox/streets-v11", // stylesheet location
-        center: [77.005438, 28.387802],
-        zoom: 11
-      });
+  const [ viewport, setViewport ] = useState({
+    latitude: 28.4501751,
+    longitude: 77.0738271,
+    zoom: 10,
+  });
 
-      map.on("load", () => {
-        setMap(map);
-        map.resize();
-        map.scrollZoom.disable();
-      });
-    };
-
-    if (!map) initializeMap({ setMap, mapContainer });
-  }, [map]);
-
-  return <div ref={mapContainer} className = {MapStyles.style} />;
+  return (
+    <div style={{marginTop: 40}}>
+      <MapGL
+        {...viewport}
+        onViewportChange={(viewport) => {
+          setViewport(viewport)
+        }}
+        width="100vw"
+        height="500px"
+        mapboxApiAccessToken={MAPBOX_TOKEN}
+      >
+      </MapGL>
+    </div>
+  );
 };
 
 export default MapSection;
