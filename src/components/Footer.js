@@ -15,10 +15,10 @@ export default function Footer()
             </div> 
             <div className = {FooterStyles.section2}>
             <h1>Navigation</h1>    
-            <Link to = "/page-2">Our Journey</Link>
+            <Link to = "/OurJourney">Our Journey</Link>
             <Link to = "/Farmers">Our Farmers</Link>
-            <Link to = "/">Stories</Link>
-            <Link to ="/">Traceability</Link>
+            <Link to = "/Stories">Stories</Link>
+            <Link to ="/Traceability">Traceability</Link>
             </div>        
             <div className = {FooterStyles.section3}>
                 <h1>Company</h1>
