@@ -88,69 +88,11 @@ $lightgreen:#7ef792;
         @include sm {
             padding-top: 15%;
         }
-        h1{
-            font-weight: 400;
-            padding-top: 5%;
-            @include md {
-                font-size: 1.7rem;
-            }
-            @include sm {
-                display: flex;
-                
-                text-align: center;
-                font-size: 1.5rem;
         
-            }
-           
-
-        }
-        p{
-            text-align: justify;
-            width: 45%;
-            color: #9a9a9a;
-            @include md {
-                width: 60%;
-                font-size: 0.9rem;
-            }
-            @include sm {
-                max-width: 80%;
-                padding-top: 10%;
-                font-size: 0.8rem;
-            }
-            
-        }
         
             
         }
-        .med_link{
-            color: black;
-            font-size: 1.2rem;
-            text-decoration: none;
-            transition: all 0.5s;
-            padding-right: 38.5%;
-            @include lg {
-                padding-right: 35%;
-            }
-            @include md {
-                padding-right: 47%;
-            }
-            @include sm {
-                font-size: 15px;
-                padding-right: 42%;
-            }
-            @include xsm {
-                font-size: 15px;
-                padding-right: 40%;
-            }
-            @include xm {
-                font-size: 15px;
-                padding-right: 36%;
-            }
-            &:hover{
-                color:#27cc53;
-                transition: all 0.5s;
-            }
-        }
+    
     
 
 

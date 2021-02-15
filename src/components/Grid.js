@@ -13,7 +13,7 @@ export default function Grid()
                 <h1>Progressive Farmers</h1>
                 </Link>
                
-                <Link to = "/Trace"className = {gridStyles.row2}>
+                <Link to = "/Traceability" className = {gridStyles.row2}>
                 <h1>Traceable Food</h1>
                 </Link>
             </div>

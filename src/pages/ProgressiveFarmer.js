@@ -16,7 +16,7 @@ export default function ProgressiveFarmer()
             <p>Know more about Progressive Farming.</p>
 </div>
             <div className = {progressiveStyles.section1}>
-                
+                <h1>Our Farmers use modern technologies for farming to produce more then other farmers in that region.</h1>
             </div>
             </Layout>
            

@@ -16,7 +16,7 @@ export default function Header()
       </Link>
       <div className ={`${headerStyles.navlink} ${nav ? 'show' : 'hidden'}` } nav = {nav}>
         <Link to = "/OurJourney">Our Journey </Link>
-        <Link to = "/Traceability">Our Farmers</Link>
+        <Link to = "/Farmers">Our Farmers</Link>
         <Link to = "/Stories">Stories</Link>
         <Link to = "/">Contact</Link>
       </div>
