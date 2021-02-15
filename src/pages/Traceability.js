@@ -17,9 +17,9 @@ export default function Trace()
                 <p><Link to = "/">Home</Link> / Traceable Food</p>
                 <h1>Traceable Food</h1>
                 <p>A guide for Traceability Program.</p>
-
-                
-               
+            </div>
+            <div className  = {traceStyles.section1}>
+                 
             </div>
             <Footer />
             <Copyright />

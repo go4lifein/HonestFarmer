@@ -15,8 +15,8 @@ export default function Header()
         <Logo />
       </Link>
       <div className ={`${headerStyles.navlink} ${nav ? 'show' : 'hidden'}` } nav = {nav}>
-        <Link to = "/page-2">Our Journey </Link>
-        <Link to = "/Farmers">Our Farmers</Link>
+        <Link to = "/OurJourney">Our Journey </Link>
+        <Link to = "/Traceability">Our Farmers</Link>
         <Link to = "/Stories">Stories</Link>
         <Link to = "/">Contact</Link>
       </div>

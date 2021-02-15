@@ -9,7 +9,8 @@ export default function Copyright()
     return(
         <div className = "copy">
             <div className = "section">
-                <p> <AiOutlineCopyright className="icon" />Honest Farmer</p>
+                <p> <AiOutlineCopyright className="icon" />Honest Farmer. All Rights Reserved</p>
+                <p>Version 0.1.0</p>
             </div>
 
         </div>
