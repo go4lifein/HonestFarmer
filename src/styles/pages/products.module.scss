@@ -23,11 +23,11 @@ $lightred:#ffb0b0;
         background-color: $lightred;
         @include md {
             height: 50vh;
-            padding-top: 20%;
+            padding-top: 15%;
         }
         @include sm {
             height: 50vh;
-            padding-top: 40%;
+            padding-top: 20%;
         }
 
         h1 {
