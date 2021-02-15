@@ -27,10 +27,10 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-81305f86cacb64d0bf9b.js"
+    "url": "webpack-runtime-5a8f92075cf13553a3d9.js"
   },
   {
-    "url": "styles.a3a76cdfc2854d9e7a5c.css"
+    "url": "styles.b211e06278cee0a862a9.css"
   },
   {
     "url": "styles-407fe62976dc5310c43e.js"
@@ -39,11 +39,11 @@ self.__precacheManifest = [
     "url": "framework-4ae830732e225b42b55a.js"
   },
   {
-    "url": "app-758bde70a686caeef0ba.js"
+    "url": "app-93664749647245e09b07.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "bd47238b72bc1f423947f4b0ae322e63"
+    "revision": "0243c902af49d3e05e3110a255921448"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"
@@ -54,14 +54,14 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "c1bdd3fb18ef80249fc6547b83a60e7a"
+    "revision": "0275805b3409d3e631d2e4f9b29c01b0"
   },
   {
     "url": "polyfill-4ad63c5377dde2700cee.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "4205a176f105416880a7a83995f689bd"
+    "revision": "efecb65fa1fe3d0f05a8f2dd19eb98fc"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -148,12 +148,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/HonestFarmer`), ``)
+  pathname = pathname.replace(new RegExp(`^`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/HonestFarmer/app-758bde70a686caeef0ba.js`))) {
+  if (!resources || !(await caches.match(`/app-93664749647245e09b07.js`))) {
     return await fetch(event.request)
   }
 
@@ -166,7 +166,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/HonestFarmer/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
