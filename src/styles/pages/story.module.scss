@@ -30,6 +30,16 @@ $lightgreen:#7ef792;
             padding-top: 40%;
         }
 
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: $font1;
+        }
+        .mediumlink{
+            text-decoration: underline;
+            line-height: 1;
+        }
+
         h1 {
              font-family: $font2;
              text-transform: uppercase; 
@@ -54,14 +64,79 @@ $lightgreen:#7ef792;
                 padding-top: 10px;
                 font-size: 0.8rem;
             }
-            a{
-                text-decoration: none;
-                color: white;
-            }
+           
 
         }
        
 
     }
+    .section1{
+        font-family: $font1;
+        display: flex;
+        flex-direction: column;
+        
+        background-color: white;
+        align-items: center;
+        width: 100%;
+        line-height: 1.5;
+        padding-bottom: 10%;
+   
+        padding-left: 2%;
+        @include md {
+            padding-top: 10%;
+        }
+        @include sm {
+            padding-top: 15%;
+        }
+        h1{
+            font-weight: 400;
+            padding-top: 5%;
+            @include md {
+                font-size: 1.7rem;
+            }
+            @include sm {
+                display: flex;
+                
+                text-align: center;
+                font-size: 1.5rem;
+        
+            }
+           
+
+        }
+        p{
+            text-align: justify;
+            width: 45%;
+            color: #9a9a9a;
+            @include md {
+                width: 60%;
+                font-size: 0.9rem;
+            }
+            @include sm {
+                max-width: 80%;
+                padding-top: 10%;
+                font-size: 0.8rem;
+            }
+            
+        }
+        
+            
+        }
+        .med_link{
+            color: black;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: all 0.5s;
+            padding-right: 38.5%;
+            @include md {
+                padding-right: 47%;
+            }
+            &:hover{
+                color:#27cc53;
+                transition: all 0.5s;
+            }
+        }
+    
+
 
 }

@@ -8,7 +8,7 @@ export default function Banner(){
     return(
         <div className = {bannerStyles.hero}>
             <div className = {bannerStyles.heroLeft}>
-                <h1>Food, Now Traceable.</h1>
+                <h1>Fresh Greens<br></br> Now Traceable.</h1>
             
 
                 <p>We deliver the freshest produce in India.<br></br> From farm to table.</p>

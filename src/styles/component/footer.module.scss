@@ -19,6 +19,9 @@ $lightblack : #000;
         height: 40vh;
         
     }
+    @include lg {
+        height: 400px;
+    }
     @include md {
         height: 60vh;
         width: 103% !important;

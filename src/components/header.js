@@ -3,8 +3,6 @@ import headerStyles from "../styles/component/header.module.scss";
 import {Link} from 'gatsby'
 import Logo from "../assets/svgs/logo.svg"
 
-import {MdAndroid} from "@react-icons/all-files/md/MdAndroid"
-import {AiFillApple} from '@react-icons/all-files/ai/AiFillApple'
 export default function Header()
 
 {
@@ -16,21 +14,19 @@ export default function Header()
       <Link to ="/" className= {headerStyles.logo}>
         <Logo />
       </Link>
-      <div className = {headerStyles.navlink} nav = {nav}>
+      <div className ={`${headerStyles.navlink} ${nav ? 'show' : 'hidden'}` } nav = {nav}>
         <Link to = "/page-2">Our Journey </Link>
         <Link to = "/Farmers">Our Farmers</Link>
         <Link to = "/Stories">Stories</Link>
         <Link to = "/">Contact</Link>
       </div>
-      <div className = {headerStyles.buttons}>
-        <Link to = "/">
-          <MdAndroid className = {headerStyles.android} />
-        </Link>
-        <Link to = "/">
-          <AiFillApple className = {headerStyles.apple} />
-        </Link>
-      </div>
-      <div className = {headerStyles.menuIcon} onClick ={() => showNav(!nav)}>
+      
+      <div 
+        className = {headerStyles.menuIcon} 
+        onClick ={() => {
+          showNav(!nav);
+        }}
+      >
     
         <span></span>
         <span></span>
