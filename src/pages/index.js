@@ -16,7 +16,7 @@ export default function IndexPage()
       <Header />
       <Banner />
       <Grid />
-      <Stories />
+     
       <MapSection />
       <Footer />
       <Copyrights />

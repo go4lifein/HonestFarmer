@@ -4,7 +4,7 @@
 
 $font1: 'NueBold';
 $green1:#3DDC84;
-
+$offwhite: #f5f5f5;
 
 .header{
     display: flex;
@@ -21,7 +21,7 @@ $green1:#3DDC84;
         
         padding-left: 2.9%;
         padding-top: 5%;
-        z-index: 10;
+        z-index: 20;
         @include lg 
         {
             padding-top: 8%;
@@ -32,29 +32,50 @@ $green1:#3DDC84;
 
         }
 
-
-        
     
-    }
+    
     
         .logo{
-            width: 18%;
-            height: 18%;
+            width: 8%;
+            height: 8%;
              
             @include md {
-                width: 16%;
-                height: 16%;
+                width: 10%;
+                height: 10%;
             }
             @include sm {
                 width: 20%;
                 height: 20%;
             }
         }
+        .menu{
+
+            display: flex;
+      justify-content: space-between;
+      align-items: center;  
+      padding-left: 40%;
+      @include lg {
+          padding-left: 32%;
+      }
+      @include md {
+          padding-left: 28%;
+      }
+        }
+        .show{
+            transform: translateX(0%) !important;
+            @include sm {
+                transform: translateX(0%)  !important;
+            }
+        }
+       
 
     .navlink{
         padding-left: 55%;
         padding-top: 2%;
         z-index: 10;
+        display: flex;
+    
+        transition: transform 250msms;
         width: 100%;
         
         @include txl {
@@ -69,45 +90,80 @@ $green1:#3DDC84;
             padding-left: 35%;
             
         }
-        @include sm {
-            display: none;
+        @include sm {   
+            position: absolute;
+            top: 0;
+            right: 0;
+            align-items: flex-start;
+            align-self: flex-start;
+            width: calc(80% - 60%);
+            height: calc(100vh - 20%);
+            padding: 20%;
+            padding-top: 25%;
+            padding-bottom: 0;
+            background-color: $offwhite;
+            flex-direction: column;
+            transform: translateX(100%);
+            transition: all 250ms ease-in-out;
+            z-index: 99;
+           
+            
+          
         }
+       
+    
+        
         
         a{
             text-decoration: none;
-            padding-left: 20px;
+            margin-right: 20px;
             color: black;
             font-family: $font1;
             text-transform: uppercase;
             font-size: 18px;
-            mix-blend-mode: difference;
+            white-space: nowrap;
+            
             @include lg {
                 font-size: 14px;
             }
             @include md {
                 font-size: 12px;
             }
+            @include sm {
+                z-index: 10;
+                margin-top: 8%;
+                font-size: 14px;
+                padding-top: 30%;
+                margin-right: 20px;
+            }
+            @include xsm {
+                padding-top: 35%;
+                margin-left: -10%;
+            }
             
         }
 
     }
+    
    
 
     .menuIcon{
         width: 20px;
         display: none;
+    
         @include sm{
             display: block;
-            margin-top: 5.9%;
-            padding-left: 65%;
+            position: absolute;
+           
+            padding-left: 5%;
+            margin-left: 33%;
+            cursor: pointer;
+            z-index: 100;
+            &::after {
+              outline: none;
+            }
         }
-        @include xsm {
-            padding-left: 64%;
-        }
-        @include xm {
-            margin-top: 5.5%;
-
-        }
+       
         span{
             margin-bottom: 0.3rem;
             height: 2px;
@@ -116,12 +172,12 @@ $green1:#3DDC84;
             display: block;
             @include xm {
                 height: 1.5px;
-                width: 90%;
+                width: 100%;
             }
         }
         
     }
-
+}
     
 
 }

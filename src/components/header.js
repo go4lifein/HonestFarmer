@@ -14,7 +14,8 @@ export default function Header()
       <Link to ="/" className= {headerStyles.logo}>
         <Logo />
       </Link>
-      <div className ={`${headerStyles.navlink} ${nav ? 'show' : 'hidden'}` } nav = {nav}>
+      <div className = {headerStyles.menu}>
+      <div className ={`${headerStyles.navlink} ${nav ? headerStyles.show : " "}` }>
         <Link to = "/OurJourney">Our Journey </Link>
         <Link to = "/Farmers">Our Farmers</Link>
         <Link to = "/Stories">Stories</Link>
@@ -31,6 +32,7 @@ export default function Header()
         <span></span>
         <span></span>
         <span></span>
+        </div>
       </div>
       </div>
     </div>
