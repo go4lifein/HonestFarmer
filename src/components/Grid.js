@@ -1,11 +1,11 @@
-import React from 'react'
+import React , {useRef} from 'react'
 import {Link} from 'gatsby'
 import gridStyles from "../styles/component/grid.module.scss"
 
 export default function Grid()
 {
     return(
-        <div className = {gridStyles.grid}>
+        <div className = {gridStyles.grid} id = "grid" >
             
             <div className = {gridStyles.section1}>
                

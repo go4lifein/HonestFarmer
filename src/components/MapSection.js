@@ -2,7 +2,6 @@ import React from 'react'
 import MapStyles from "../styles/component/mapsection.module.scss"
 import mapsimage from "../images/mapsimage.png"
 import {Link} from 'gatsby'
-import stoStyles from "../styles/component/stories.module.scss"
 
 export default function MapSection ()
 {

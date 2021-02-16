@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useRef} from 'react'
 import bannerStyles from "../styles/component/banner.module.scss"
 import {Link} from 'gatsby'
 import {CgArrowLongRight} from "@react-icons/all-files/cg/CgArrowLongRight"
@@ -14,7 +14,7 @@ export default function Banner(){
                 <p>We deliver the freshest produce in India.<br></br> From farm to table.</p>
           
                     <div className = {bannerStyles.buttons}>
-                    <Link to ="/" className = {bannerStyles.btn}>
+                    <Link to ="#grid" className = {bannerStyles.btn}>
                     Learn More <CgArrowLongRight className = {bannerStyles.arrow} />
                 </Link>
                 <Link to ="http://deliver.go4life.in/#/trace" className = {bannerStyles.btn2}>

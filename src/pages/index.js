@@ -3,7 +3,6 @@ import  "../styles/index.scss";
 import Header from "../components/Header.js"
 import Banner from "../components/Banner.js"
 import Grid from "../components/Grid.js"
-import Stories from "../components/Stories.js"
 import MapSection from "../components/MapSection.js"
 import  Footer from "../components/Footer.js"
 import Copyrights from "../components/Copyright.js"
@@ -14,7 +13,7 @@ export default function IndexPage()
     
       <div className = "container">
       <Header />
-      <Banner />
+      <Banner  />
       <Grid />
      
       <MapSection />
