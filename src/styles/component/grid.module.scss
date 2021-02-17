@@ -22,9 +22,9 @@ $font2:'CircularStd';
         position:relative;
         margin-top: -20%;
     }
-    @media (max-height: 1025px)
+    @media (height: 1024px)
   {
-    margin-top: -50%;
+    margin-top: -40%;
   }
     @include sm {
         margin-top: 15%;
@@ -50,7 +50,7 @@ $font2:'CircularStd';
                 width:54%;
                 height: 75vh;
                 text-decoration: none;
-                background-image: url('../../images/image1.jpg');
+                background-image: url('../../images/pfm.png');
                 background-size: cover;
                 transition: all 0.5s;
                 background-position: center;
