@@ -54,18 +54,21 @@ $font2 :'HK Grotesk';
         height: 35vh;
     }
     @include md {
-        height: 35vh;
+        height: 223px;
     }
     @include sm {
         height: 20vh;
+        width: 98%;
      
         
       }
     @include xsm {
         height: 110px;
+        width: 98%;
     }
     @include xm {
         height: 16vh;
+        width: 98%;
     }
 
     h1{
@@ -86,10 +89,9 @@ $font2 :'HK Grotesk';
         }
         @include sm {
             font-size:0.5rem;
+            margin-top: -8%;
         }
-        @include xm {
-            margin-top: 8%;
-        }
+       
     }
     .wrapper__btn{
         font-size: 1.2rem;
@@ -118,15 +120,17 @@ $font2 :'HK Grotesk';
             width: 70px;
             font-size: 0.5rem;
             padding: 6px 5px 6px 6px;
+            margin-left: 36.5%;
+           
         }
         @include xsm {
             width: 60px;
             border: 1.5px solid black;
             padding: 3px 3px 3px 3px ;
-            margin-left: 5.5%;
+            margin-left: 37%;
         }
         @include xm {
-            margin-left: 4%;
+            margin-left: 35%;
         }
     }
 }

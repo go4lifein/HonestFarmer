@@ -20,7 +20,7 @@ export default function Trace()
                 <p>A guide for Traceability Program.</p>
             </div>
             <div className  = {traceStyles.section1}>
-                <h1>Our Traceable Food is what make us special.</h1>
+                <h1>Our Traceable Food is what makes us special.</h1>
                 <div className = {traceStyles.grid1}>
                         <h1>Step 1: Look out for the QR code on any Pack.</h1>
                         <img src = {qr} alt = "qrcode" />

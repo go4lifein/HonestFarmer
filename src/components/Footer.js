@@ -9,7 +9,7 @@ import {AiFillTwitterSquare} from "@react-icons/all-files/ai/AiFillTwitterSquare
 export default function Footer()
 {
     return(
-        <div className = {FooterStyles.footer}>
+        <div className = {FooterStyles.footer} id = "footer">
             <div className = {FooterStyles.section1}>
                 <Logo />
             </div> 

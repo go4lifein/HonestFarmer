@@ -19,7 +19,7 @@ export default function Header()
         <Link to = "/OurJourney">Our Journey </Link>
         <Link to = "/Farmers">Our Farmers</Link>
         <Link to = "/Stories">Stories</Link>
-        <Link to = "/">Contact</Link>
+        <Link to = "#footer">Contact</Link>
       </div>
       
       <div 

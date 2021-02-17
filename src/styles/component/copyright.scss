@@ -22,6 +22,9 @@ $grey1 : #404040;
         justify-content: space-around;
         width: 100%;
         flex-direction: row;
+        @include md {
+            margin-left: -10%;
+        }
         @include sm {
             margin-left: -3%;
         }

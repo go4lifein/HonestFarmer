@@ -4,6 +4,7 @@
 $grey1: #141414;
 $lightgrey : #e3e3e3;
 $font1: 'NueBold';
+$font2:'CircularStd';
 
 .grid{
     display: flex;
@@ -19,8 +20,12 @@ $font1: 'NueBold';
     }
     @include md {
         position:relative;
-        margin-top: -10%;
+        margin-top: -20%;
     }
+    @media (max-height: 1025px)
+  {
+    margin-top: -50%;
+  }
     @include sm {
         margin-top: 15%;
     }
@@ -28,41 +33,7 @@ $font1: 'NueBold';
         margin-top: 5%;
     }
 
-    .section0{
-        width: 96%;
-        height: 40vh;
-        @include txl{
-            height: 30vh;
-        }
-        @include lg {
-            height: 25vh;
-        }
-        @include md {
-            height: 20vh;
-        }
-        @include sm {
-            height: 20vh;
-        }
-        background-color:$lightgrey ;
-        h1{
-            font-family: $font1 ;
-            color: black;
-            text-align: center;
-            margin-top: 2%;
-            @include txl{
-                margin-left: 6%;
-            }
-            @include lg {
-                font-size: 1.5rem;
-            }
-            @include md {
-                font-size: 1rem;
-            }
-            @include sm {
-                font-size: 0.8rem;
-            }
-        }
-    }
+   
 
     .section1{
         display: flex;
@@ -100,7 +71,7 @@ $font1: 'NueBold';
                       height: 50vh;
                   }
                   @include md {
-                      height: 45vh;
+                      height: 285px;
                   }
                   @include sm {
                       height: 30vh;
@@ -139,7 +110,7 @@ $font1: 'NueBold';
                 height: 50vh;
             }
             @include md {
-                height: 45vh;
+                height: 285px;
             }
             @include sm {
                 height: 30vh;
@@ -186,7 +157,7 @@ $font1: 'NueBold';
                 height: 50vh;
             }
             @include md {
-                height: 45vh;
+                height: 285px;
             }
             @include sm {
                 height: 30vh;
@@ -208,7 +179,7 @@ $font1: 'NueBold';
         }
         .row4{
             width:54%;
-            background-image: url('../../images/image6.jpg');
+            background-image: url('../../images/farmer.png');
             background-size: cover;
             background-position: center;
             text-decoration: none;
@@ -226,7 +197,7 @@ $font1: 'NueBold';
                 height: 50vh;
             }
             @include md {
-                height: 45vh;
+                height: 285px;
             }
             @include sm {
                 height: 30vh;
