@@ -1,9 +1,9 @@
 import axios from "axios";
 
-// export const API_URL = 'https://api.deliver.go4life.in/api';
+export const API_URL = 'https://api.honestfarmer.in/api';
 // export const API_URL = 'https://go4life-deliver.herokuapp.com/api';
 // export const API_URL = '/api';
-export const API_URL = 'http://localhost:3000/api';
+// export const API_URL = 'http://localhost:3000/api';
 
 
 export function getCookies() {
