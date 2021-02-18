@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/Admin.js"],"names":["Admin"],"mappings":"6FAAA,wEAEe,SAASA,IACtB,OACE","file":"component---src-pages-admin-js-b0630d2e4b3522968faf.js","sourcesContent":["import React from \"react\"\r\n\r\nexport default function Admin() {\r\n  return(\r\n    <div>\r\n\r\n    </div>\r\n  );\r\n}"],"sourceRoot":""}

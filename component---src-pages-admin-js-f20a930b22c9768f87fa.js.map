@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/Admin.js"],"names":["NotFoundPage"],"mappings":"6FAAA,wEAEe,SAASA,IAEtB,OACE","file":"component---src-pages-admin-js-f20a930b22c9768f87fa.js","sourcesContent":["import React from \"react\"\r\n\r\nexport default function NotFoundPage()\r\n{\r\n  return(\r\n    <>\r\n      404 not found\r\n    </>\r\n\r\n  );\r\n}"],"sourceRoot":""}
