@@ -1,0 +1,3 @@
+export const UPDATE_ADMIN = 'UPDATE_ADMIN';
+
+export const UPDATE_ADMIN_DATA = 'UPDATE_ADMIN_DATA';

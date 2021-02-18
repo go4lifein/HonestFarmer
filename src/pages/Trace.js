@@ -67,7 +67,7 @@ const MapSection = () => {
           longitude={Number(Farmer.longitude)}
           offsetLeft={-20} offsetTop={-10}
         >
-          <img src={markerImage} width={40} />
+          <img src={markerImage} width={40} alt = "marker"/>
           <div className="radar-marker">
 
           </div>

@@ -1,9 +1,9 @@
 import axios from "axios";
 
-// export const API_URL = 'https://api.deliver.go4life.in/api';
+export const API_URL = 'https://api.honestfarmer.in/api';
 // export const API_URL = 'https://go4life-deliver.herokuapp.com/api';
 // export const API_URL = '/api';
-export const API_URL = 'http://localhost:3000/api';
+// export const API_URL = 'http://localhost:3000/api';
 
 
 export function getCookies() {
@@ -17,7 +17,7 @@ export function getCookies() {
   return data;
 }
 
-export function setCookie(name, value, days) {
+export function setCookie(name, value, days = 2) {
   var expires = "";
   if (days) {
       var date = new Date();
@@ -27,7 +27,8 @@ export function setCookie(name, value, days) {
   document.cookie = name + "=" + (value || "")  + expires + "; path=/";
 }
 
-function setRequestAuthHeader(accessToken) {
+export function setRequestAuthHeader(accessToken) {
+  setCookie("x-admin-token", accessToken, 5)
   axios.defaults.headers.common["x-admin-token"] = accessToken;
 }
 

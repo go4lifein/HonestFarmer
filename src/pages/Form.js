@@ -1,60 +1,56 @@
-
-import React ,{ Component } from 'react'
+import React, {Component} from 'react'
+import {setRequestAuthHeader} from '../helpers/utils.js'
+import {loginAdmin} from '../api/admin.js'
+import Header from "../components/Header.js"
 import "../styles/component/form.scss"
 
+
+
 class Form extends Component{
-constructor(props){
-    super();
-    this.state = {
-       products: [
-            {
-                "id": 1,
-                "name": "Amla",
-               
-            },
-            {
-                "id": 2,
-                "name": "Anaar/Pomegranate",
-              
-            },
-            {
-                "id": 3,
-                "name": "Green Peas / Matar",
-               
-            },
-            {
-                "id": 4,
-                "name": "Kathal - Diced",
-               
-            },
-            {
-                "id": 5,
-                name: "Pineapple (1 - 1.5 Kg)",
-                
-            }
-        ]
+    state= {
+        email: '',
+        password: ''
     }
+
+    handleSubmit = () =>{
+        let {email , password} = this.state;
+        loginAdmin({email , password})
+        .then(res =>{
+            let token  = res.data['x-admin-token'];
+            setRequestAuthHeader(token);
+            alert("Correct");
+        })
+        .catch(err => alert("Invalid Username or Password"));
+    }
+    render(){
+        let {email , password } = this.state;
+        return(
+           <div className = "form">
+               <Header />
+               <div className = "main--form">
+                <input type = "text" 
+                name = "email"
+                label = "email"
+                value = {email}
+                placeholder = "Enter Email"
+                onChange = {(e) => this.setState({email:e.target.value})}
+                />
+                <input type = "password"
+                name = "password"
+                label = "password"
+                vale = {password}
+                placeholder = "Enter Password"
+                onChange = {(e) => this.setState({password:e.target.value})}
+                
+                />
+                <button onClick = {this.handleSubmit}>Submit</button>
+            </div>
+            
+           </div>
+        );
+    }
+
+
 }
-stateChange(e) {
-  this.setState({prodcuts: e.target.products});
-}
-
-render()
-
-{
-    console.log(this.state.products);
-    return(
-        <div className = "form">
-            <form className = "innercontent">
-
-            <select name="Products" id= "products" >
-            <option value  = {this.state.products.name} onChange = {this.stateChange}  >{this.state.products.name}</option>
-            </select>
-            </form>
-        </div>
-    );
-}
-
-}
-
-export default Form ;
+ 
+export default Form;
