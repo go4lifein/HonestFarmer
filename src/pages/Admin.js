@@ -7,25 +7,41 @@ class Admin extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      admin: null
     }
   }
   componentDidMount() {
     getAdmin()
     .then(res => {
-      console.log(res)
+      this.setState({
+        admin: res.data
+      });
     })
     .catch(err => {
-      console.log(err);
+      // remove cookie
     })
   }
   
   render() {
+    const {admin} = this.state;
+
     return(
       <div id="admin">
-        Hellow there
-        <Router basepath="/admin">
-        </Router>
+        {
+          admin ?
+          <div>
+            Harvest Report Form here
+            {/* <Router basepath="/admin">
+            </Router> */}
+          </div>
+          :
+          // <Login />
+          <div>
+            Admin Login Here
+          </div>
+
+        }
+        
       </div>
     );
   }

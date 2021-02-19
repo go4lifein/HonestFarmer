@@ -40,3 +40,59 @@ body{
 .absolute {
     position: absolute;
 }
+
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.space-bw {
+  justify-content: space-between;
+}
+
+.middle {
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+td.fixed-width-column {
+  width: 100px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+.pv-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.ph-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.w-100 {
+  width: 100%;
+}
+.m-10 {
+  margin: 10px;
+}
+.mv-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.mh-10 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
