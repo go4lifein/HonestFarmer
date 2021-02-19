@@ -1,14 +1,14 @@
 import React from 'react'
-import  "../styles/index.scss";
 import Header from "../components/Header.js"
 import Banner from "../components/Banner.js"
 import Grid from "../components/Grid.js"
 import MapSection from "../components/MapSection.js"
-import  Footer from "../components/Footer.js"
+import Footer from "../components/Footer.js"
 import Copyrights from "../components/Copyright.js"
 
-export default function IndexPage()
-{
+import  "../styles/index.scss";
+
+export default function IndexPage() {
   return(
     
       <div className = "container">
@@ -19,6 +19,7 @@ export default function IndexPage()
       <MapSection />
       <Footer />
       <Copyrights />
+      
       </div>
       
   

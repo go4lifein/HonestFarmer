@@ -1,19 +1,20 @@
 import axios from "axios";
 
-// export const API_URL = 'https://api.deliver.go4life.in/api';
-// export const API_URL = 'https://go4life-deliver.herokuapp.com/api';
+export const API_URL = 'https://api.honestfarmer.in/api';
 // export const API_URL = '/api';
-export const API_URL = 'http://localhost:3000/api';
+// export const API_URL = 'http://localhost:3000/api';
 
 
 export function getCookies() {
-  var x = document.cookie;
-  let cookies = x.split(";");
   let data = {};
-  cookies.forEach((cookie) => {
-    let values = cookie.split("=");
-    data[values[0]] = values[1];
-  });
+  if(typeof document !== `undefined`) {
+    var x = document.cookie;
+    let cookies = x.split(";");
+    cookies.forEach((cookie) => {
+      let values = cookie.split("=");
+      data[values[0]] = values[1];
+    });
+  }
   return data;
 }
 
