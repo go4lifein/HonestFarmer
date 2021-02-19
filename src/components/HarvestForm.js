@@ -11,7 +11,7 @@ class HarvestForm extends Component{
             id : 1 , 
             productId : 1 ,  
             farmerId :  2 , 
-            harvestTime :  new Date().toISOString  
+            harvestTime :  new Date()
 
         }
     }
@@ -29,7 +29,7 @@ class HarvestForm extends Component{
             [e.target.name]: e.target.value
         });
     }
-    onCalenderChange = (e) =>{
+    onDateTimeChange = (e) =>{
         this.setState({
             [e.target.name]: e.target.value
         });
@@ -37,11 +37,12 @@ class HarvestForm extends Component{
 
     render()
     {
+        console.log(new Date());
         const{
             id,productId,farmerId,harvestTime
         } = this.state ;
        
-        console.log(this.state);
+    
 
         return(
             <div className = "hform">
@@ -64,7 +65,8 @@ class HarvestForm extends Component{
                       <input type = "date"
                      label = "harvestTime"
                      value  = {harvestTime}
-                     onCalenderChange = {(e) => this.setState({harvestTime:e.target.value})}
+                     name = "harvestTime"
+                     onChange = {this.onDateTimeChange}
                      />
 
                      <button onCLick = {this.onSubmit}>Submit</button>
