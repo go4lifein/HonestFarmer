@@ -25,7 +25,7 @@ class Form extends Component{
     render(){
         let {email , password } = this.state;
         return(
-           <div className = "form">
+           <div className = "mform">
                <Header />
                <div className = "main--form">
                 <input type = "text" 

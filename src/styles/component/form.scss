@@ -2,8 +2,10 @@
 @import "../abstracts/variables.scss";
 @import "../../assets/Fonts/fonts.css";
 $orange1:#eb6e34;
+$font3: "CircularStd";
 
-.form{
+.mform{
+    font-family: $font3;
     
     .main--form {
         display: flex;
@@ -11,14 +13,40 @@ $orange1:#eb6e34;
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
-        padding-top: 40vh;
+        padding-top: 35vh;
+      
+    
         padding-bottom: 40vh;
 
         input{
-            
+            font-family: $font3;
+            border: none;
+            margin-top: 20px;
+            width: 20%;
+            transition: all 0.5s;
             padding: 12px 12px 12px 12px;
-            border-radius: 10px;
-            border: 2px solid $orange1;
+            border-bottom: 2px solid $orange1;
+            outline:none;
+          
+        }
+
+        button{
+            background: transparent;
+            font-family: $font3;
+            font-size: 1.2rem;
+            border: 2px solid black;
+            padding: 10px 50px 10px 50px;
+            border-radius: 25px;
+            margin-top: 2%;
+            transition: all 0.5s;
+            cursor: pointer;
+
+            &:hover{
+                border:2px solid $orange1;
+                color: #eb6e34;
+                transition: all 0.5s;
+            }
+
         }
     }
 
