@@ -6,7 +6,7 @@ import "../styles/component/form.scss"
 
 
 
-class Form extends Component{
+class Login extends Component{
     state= {
         email: '',
         password: ''
@@ -18,7 +18,9 @@ class Form extends Component{
         .then(res =>{
             let token  = res.data['x-admin-token'];
             setRequestAuthHeader(token);
-            alert("Correct");
+            
+            document.location.reload();
+            document.location.replace('/Admin');
         })
         .catch(err => alert("Invalid Username or Password"));
     }
@@ -53,4 +55,4 @@ class Form extends Component{
 
 }
  
-export default Form;
+export default Login;

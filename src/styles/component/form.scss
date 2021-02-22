@@ -16,7 +16,7 @@ $font3: "CircularStd";
         padding-top: 35vh;
       
     
-        padding-bottom: 40vh;
+        padding-bottom: 20vh;
 
         input{
             font-family: $font3;
@@ -40,6 +40,7 @@ $font3: "CircularStd";
             margin-top: 2%;
             transition: all 0.5s;
             cursor: pointer;
+            outline: none;
 
             &:hover{
                 border:2px solid $orange1;

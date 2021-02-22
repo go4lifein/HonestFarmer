@@ -2,8 +2,9 @@ import React , { Component} from 'react'
 import {addHarvestReport} from "../api/admin"
 import HarvestForm from "../components/HarvestForm"
 import Header from "../components/Header.js"
+import "../styles/component/harvestform.scss"
 
-class AddForm extends Component{
+class AddReport extends Component{
     constructor(props)
     {
         super(props);
@@ -51,9 +52,11 @@ class AddForm extends Component{
                 flexDirection : "column",
                 justifyContent : "center",
                 alignItems : "center",
-                paddingTop : "20vh"
+                paddingTop : "15vh",
+                width : "100%",
+                fontFamily : "CircularStd"
               }}>
-                    <h1>Add Harvest Report </h1>
+                    <h1 className = "harvest1">Add Harvest Report </h1>
                     <HarvestForm onSubmit = {this.onSubmit} loading = {loading} />
                          
                 </div>
@@ -63,4 +66,4 @@ class AddForm extends Component{
     }
 }
 
-export default AddForm;
+export default AddReport;

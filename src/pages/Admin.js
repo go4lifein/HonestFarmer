@@ -1,7 +1,8 @@
 import React from "react"
 import {getAdmin} from '../api/admin';
-
-import { Router } from "@reach/router"
+import AddReport from "./AddReport"
+import Login from "./Login"
+import { Router, Route } from "@reach/router"
 
 class Admin extends React.Component {
   constructor(props) {
@@ -27,20 +28,14 @@ class Admin extends React.Component {
 
     return(
       <div id="admin">
-        {
-          admin ?
-          <div>
-            Harvest Report Form here
-            {/* <Router basepath="/admin">
-            </Router> */}
-          </div>
-          :
-          // <Login />
-          <div>
-            Admin Login Here
-          </div>
-
-        }
+        {admin ?
+        <div>
+          <AddReport />
+          </div>  :
+          <div >
+            <Login />
+            </div>
+      }
         
       </div>
     );
