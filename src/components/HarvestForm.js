@@ -69,7 +69,7 @@ class HarvestForm extends Component{
                      onChange = {this.onDateTimeChange}
                      />
 
-                     <button onCLick = {this.onSubmit}>Submit</button>
+                     <button onClick = {this.onSubmit}>Submit</button>
                 </form>
             </div>
         );
