@@ -24,7 +24,7 @@ class AddReport extends Component{
             this.setState({
                 loading:false
             })
-            alert('Done');
+          
         })
         .catch(err =>{
             if(err.response && err.repsonse.status === 400){
