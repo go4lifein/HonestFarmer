@@ -12,10 +12,12 @@ class Login extends Component{
         password: ''
     }
 
+
     handleSubmit = () =>{
         let {email , password} = this.state;
         loginAdmin({email , password})
         .then(res =>{
+            
             let token  = res.data['x-admin-token'];
             setRequestAuthHeader(token);
             
@@ -23,6 +25,26 @@ class Login extends Component{
             document.location.replace('/Admin');
         })
         .catch(err => alert("Invalid Username or Password"));
+    }
+    handleChange = (e) =>
+    {
+        this.setState({
+            [e.target.name]: e.target.value
+        });
+    }
+    handlePress = (e) =>{
+        if (e.key === "Enter") {
+            let {email , password} = this.state;
+            loginAdmin({email , password})
+            .then(res =>{
+                let token  = res.data['x-admin-token'];
+                setRequestAuthHeader(token);
+                
+                document.location.reload();
+                document.location.replace('/Admin');
+            })
+            .catch(err => alert("Invalid Username or Password")) 
+          }
     }
     render(){
         let {email , password } = this.state;
@@ -40,7 +62,9 @@ class Login extends Component{
                 <input type = "password"
                 name = "password"
                 label = "password"
-                vale = {password}
+                value = {password}
+                onChange = {this.handleChange}
+                onKeyPress = {this.handlePress}
                 placeholder = "Enter Password"
                 onChange = {(e) => this.setState({password:e.target.value})}
                 
