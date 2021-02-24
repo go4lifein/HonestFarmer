@@ -59,7 +59,7 @@ class HarvestForm extends Component {
                             className="space"
                             htmlFor="fid"
                         >
-                            Farmer
+                            Farmers
                         </label>
                         <select
                             label="id"

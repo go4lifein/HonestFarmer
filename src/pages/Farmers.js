@@ -39,6 +39,8 @@ export default function Farmers() {
           );
        })}
       </div>
+     
+      
       <Footer />
       <Copyright /> 
 
@@ -46,3 +48,26 @@ export default function Farmers() {
 
   );
 }
+
+/*
+  <div className = {productStyles.section2}>
+      {farmers2Data.map((item, i) => {
+        const {name , image , about , region , subregion , latitude , longitude} = item ;
+
+        return(
+          <Cards
+            key = {i.toString()}
+            name = {name}
+            image = {image}
+            about = {about}
+            region = {region}
+            subregion = {subregion}
+            latitude = {latitude}
+            longitude = {longitude}
+          />
+        );
+
+      })}
+      </div>
+
+*/
