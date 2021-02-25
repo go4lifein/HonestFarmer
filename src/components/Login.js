@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {setRequestAuthHeader} from '../helpers/utils.js'
 import {loginAdmin} from '../api/admin.js'
-import Header from "../components/Header.js"
+import Header from "./Header.js"
 import "../styles/component/form.scss"
 
 

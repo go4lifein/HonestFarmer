@@ -1,7 +1,8 @@
 import React from "react"
 import { getAdmin } from '../api/admin';
 import AddReport from "../components/AddReport"
-import Login from "./Login"
+import Login from "../components/Login"
+import Loading from "../components/Loading"
 // import { Router, Route } from "@reach/router"
 
 class Admin extends React.Component {
@@ -9,19 +10,31 @@ class Admin extends React.Component {
     super(props);
     this.state = {
       admin: null,
-      error: null
+      error: null,
+      loading:true
     }
   }
-  componentDidMount() {
-    const admin = getAdmin().then(res => res.data);
+  async componentDidMount() {
+    const admin = await getAdmin()
+    .then(res => res.data)
+    .catch(err => this.setState({loading: false}));
+
     this.setState({
-      admin
+      admin,
+      loading:false
     });
   }
 
   render() {
-    const { admin } = this.state;
+    const { admin, loading } = this.state;
 
+    if(loading) {
+      console.log("Loading");
+      return <Loading />
+    }
+
+    console.log("Admin", admin);
+  
     return (
       <div id="admin">
         {admin ?
