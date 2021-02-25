@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {Link} from 'gatsby'
-
+import Header from "../components/Header"
 import { addHarvestReport, getAllProducts, getAllFarmers } from "../api/admin"
 import Logo from "../assets/svgs/logo.svg"
 import HarvestForm from "./HarvestForm"
@@ -53,11 +53,7 @@ class AddReport extends Component {
 
         return (
             <div>
-                <div className="absolute" style={{top: 10, left: 10}}>
-                    <Link to ="/" >
-                        <Logo style={{width: 100}} />
-                    </Link>
-                </div>
+               <Header />
                 <div 
                     className="harvest-section"
                     style={{
