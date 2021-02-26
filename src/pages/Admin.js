@@ -10,39 +10,40 @@ class Admin extends React.Component {
     this.state = {
       admin: null,
       error: null,
-      loading:true
+      loading: true
     }
   }
-  async componentDidMount() {
-    const admin = await getAdmin()
-    .then(res => res.data)
-    .catch(err => this.setState({loading: false}));
-
-    this.setState({
-      admin,
-      loading:false
-    });
-  }
+  componentDidMount() {
+    getAdmin()
+    .then(res => {
+      this.setState({
+        admin: res.data,
+        loading: false
+      });
+    })
+    .catch(err => this.setState({err: err, loading: false}));
+  } 
 
   render() {
     const { admin, loading } = this.state;
 
-    if(loading) {
-      return <Loading />
-    }
-  
     return (
-      <div id="admin">
-        {admin ?
-          <div>
-            <AddReport />
-          </div> :
-          <div >
-            <Login />
+      <>
+        {
+          loading ?
+          <Loading /> :
+          <div id="admin">
+            {admin ?
+              <div>
+                <AddReport />
+              </div> :
+              <div >
+                <Login />
+              </div>
+            }
           </div>
         }
-
-      </div>
+      </>
     );
   }
 }
