@@ -13,14 +13,7 @@ export default function Banner(){
 
                 <p>We deliver the freshest produce in India.<br></br> From farm to table.</p>
           
-                    <div className = {bannerStyles.buttons}>
-                    <Link to ="#grid" className = {bannerStyles.btn}>
-                    Learn More <CgArrowLongRight className = {bannerStyles.arrow} />
-                </Link>
-                <Link to ="/Traceability" className = {bannerStyles.btn2}>
-                    Trace Your Food <CgArrowLongRight className = {bannerStyles.arrow} />
-                </Link>
-                    </div>
+                  
                
             </div>
             <div className = {bannerStyles.heroRight}>

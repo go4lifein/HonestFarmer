@@ -9,18 +9,19 @@ $font2:'CircularStd';
 .grid{
     display: flex;
     flex-direction: column;
-    margin-left: 3%;
+    padding-left: 3%;
     @include txl{
         padding-left: 4%;
         margin-top: -20%;
     }
     @include lg {
-        padding-left: 1%;
+        padding-left: 4%;
         margin-top: -15%;
     }
     @include md {
         position:relative;
         margin-top: -20%;
+      
     }
     @media (height: 1024px)
   {

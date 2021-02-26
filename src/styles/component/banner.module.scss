@@ -12,11 +12,12 @@ $lightgrey : #e3e3e3;
 
 
 .hero{
-    height: 100vh;
+    height: 100%;
     display: flex;
     margin-left: 3%;
     flex-direction: row;
     margin-top: 7%;
+    padding-bottom: 30px;
     width: 100%;
     @include lg {
         margin-top:15%;

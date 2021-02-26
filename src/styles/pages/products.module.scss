@@ -63,4 +63,20 @@ $lightred:#ffb0b0;
        
 
     }
+
+    .section1{
+        padding-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 50px;
+        margin: 0 auto;
+        width: 80%;
+
+        @include sm {
+            flex-direction: column;
+            
+        }
+    }
 }

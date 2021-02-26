@@ -20,12 +20,7 @@ export default function Footer()
             <Link to = "/Stories">Stories</Link>
             <Link to ="/Traceability">Traceability</Link>
             </div>        
-            <div className = {FooterStyles.section3}>
-                <h1>Company</h1>
-                <Link to = "/">Terms of Use</Link>
-                <Link to = "/">FAQ</Link>
-                <Link to = "/">Privacy Policy</Link>
-            </div>
+           
             <div className = {FooterStyles.section4}>
                 <h1>Products</h1>
                 <Link>Fruits</Link>
