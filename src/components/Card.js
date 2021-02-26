@@ -8,8 +8,8 @@ export default function Card({name , image, region , subregion })
             <h1>{name}</h1>
                 <img 
                     src = {image} 
-                    width={100} 
-                    height={100} 
+                    width={150} 
+                    height={150} 
                     alt = "avatar" 
                     style={{borderRadius: '50%'}}
                 />
