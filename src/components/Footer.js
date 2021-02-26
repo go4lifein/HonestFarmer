@@ -28,7 +28,7 @@ export default function Footer()
                 <Link>Groceries</Link>
                 <Link>Ayurveda</Link>
             </div>
-            <div className = {FooterStyles.social}>
+            {/* <div className = {FooterStyles.social}>
                 <h1>Follow Us</h1>
                 <div className = {FooterStyles.links}>
                 <Link to = "/">
@@ -42,7 +42,7 @@ export default function Footer()
                     <AiFillTwitterSquare />
                 </Link>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }   

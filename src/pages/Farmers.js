@@ -26,14 +26,14 @@ export default function Farmers() {
           const {name , image , about , region , subregion , latitude , longitude} = item;
           return(
             <Card
-            key = {i.toString()}
-            name = {name}
-            image = {image}
-            about = {about}
-            region = {region}
-            subregion = {subregion}
-            latitude = {latitude}
-            longitude = {longitude}
+              key = {i.toString()}
+              name = {name}
+              image = {image}
+              about = {about}
+              region = {region}
+              subregion = {subregion}
+              latitude = {latitude}
+              longitude = {longitude}
             />
 
           );
