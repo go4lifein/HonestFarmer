@@ -28,78 +28,68 @@ $font3: "CircularStd";
                 flex-direction: column;
                 margin-top: 15px;
                 font-size: 14px;
-                
-                label{
-                padding-top: 15px;
-                }
-                select{
-                    border:none;
-                    width: 272px;
-                    border : 2px solid $orange1;
-                    border-radius: 5px;
-                    padding: 10px 10px 10px 10px;
-                    margin-top: 5px;
-                    outline: none;
-
-                }
-
-                input{
-
-                    border:none;
-                    width: 250px;
-                    border : 2px solid $orange1;
-                    border-radius: 5px;
-                    padding: 10px 10px 10px 10px;
-                    margin-top: 5px;
-                    outline: none;
-                }
             }
 
             .row2{
                 display: flex;
                 flex-direction: column;
                 font-size: 14px;
-                label{
-                    padding-top: 15px;
-                    }
-
-                    select{
-                        border:none;
-                        width: 272px;
-                        border : 2px solid $orange1;
-                        border-radius: 5px;
-                        padding: 10px 10px 10px 10px;
-                        margin-top: 5px;
-                        outline: none;
-
-                    }
-                input{
-
-                    border:none;
-                    width: 250px;
-                    border : 2px solid $orange1;
-                    border-radius: 5px;
-                    padding: 10px 10px 10px 10px;
-                    margin-top: 5px;
-                    outline: none;
-                }
             }
+
+            .avatar {
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
+            }
+            
+            label{
+                padding-top: 15px;
+            }
+
+            select{
+                border:none;
+                width: 272px;
+                border : 2px solid $orange1;
+                border-radius: 5px;
+                padding: 10px 10px 10px 10px;
+                margin-top: 5px;
+                outline: none;
+                
+            }
+            select, input {
+                    &:focus {
+                        border-color: black;
+                    }
+            }
+            input{
+                border:none;
+                width: 250px;
+                border : 2px solid $orange1;
+                border-radius: 5px;
+                padding: 10px 10px 10px 10px;
+                margin-top: 5px;
+                outline: none;
+            }
+
             button{
-                background: transparent;
                 font-family: $font3;
                 font-size: 1.2rem;
-                border: 2px solid black;
+                border: none;
                 padding: 10px 50px 10px 50px;
-                border-radius: 25px;
+                border-radius: 4px;
                 margin-top: 15%;
-                transition: all 0.5s;
+                transition: all 0.1s;
                 cursor: pointer;
                 outline: none;
+                background-color: #eb6e34;
+                color: white;
     
                 &:hover{
-                    border:2px solid $orange1;
-                    color: #eb6e34;
+                    background-color: #f79669;
                     transition: all 0.5s;
+                }
+                &:disabled {
+                    background-color: grey;
                 }
     
             }

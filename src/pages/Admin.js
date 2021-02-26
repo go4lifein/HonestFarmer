@@ -3,7 +3,6 @@ import { getAdmin } from '../api/admin';
 import AddReport from "../components/AddReport"
 import Login from "../components/Login"
 import Loading from "../components/Loading"
-// import { Router, Route } from "@reach/router"
 
 class Admin extends React.Component {
   constructor(props) {
@@ -29,11 +28,8 @@ class Admin extends React.Component {
     const { admin, loading } = this.state;
 
     if(loading) {
-      console.log("Loading");
       return <Loading />
     }
-
-    console.log("Admin", admin);
   
     return (
       <div id="admin">
