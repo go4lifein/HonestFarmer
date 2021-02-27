@@ -18,7 +18,7 @@ export default function ProgressiveFarmer()
             <p>Know more about Progressive Farming.</p>
         </div>
             <div className = {progressiveStyles.section1}>
-                <h1>Our Farmers use modern technologies for farming to produce more than other farmers in that region.</h1>
+                <h1>We work with farmers who use bio-pesticides & natural fertilisers in a safe way, without compromising on crop yield. Read on to learn about the clever techniques they use.</h1>
                 
             </div>
             <div className = {progressiveStyles.grid1}>
@@ -26,9 +26,10 @@ export default function ProgressiveFarmer()
                     <h1>
                         Polyhouse
                     </h1>
-                    <p>Polyhouse is very beneficial for the farmers specially those who prefer organic farming as the plants are grown under controlled temperature thus there is less chances of crop loss or damage.
+                        <p>
+                        It’s a closed, controlled environment that minimises chances of crop loss or damage. Because the temperature inside can be controlled, it’s useful for growing produce in all seasons. 
 
-                    </p>
+                        </p>
                 </div>
                 <div className = {progressiveStyles.right}>
                     <img src = {polyhouse} alt = "polyhouse" />
@@ -43,8 +44,7 @@ export default function ProgressiveFarmer()
                         Drip Irrigation
                     </h1>
                    <p>
-                       Our farmers use drip irrigation to minimize nutrients and fertilizers loss and increase water applicaton efficiency.
-                        Since field leveling is not neccessay, fields with irregular shapes can be easily accomodated. 
+                   This micro-irrigation system minimises the amount of water, nutrients and fertilizers used by depositing them directly above the root. It conserves natural resources, and works even for fields with irregular shapes. 
                    </p>
                 </div>
                 <div className = {progressiveStyles.right}>
@@ -61,7 +61,9 @@ export default function ProgressiveFarmer()
                         Pheromone Trap
                     </h1>
                    <p>
-                       Pheromone Traps are used to monitor target pests in agriculture or in residential areas. By constantly monitoring for insects, it may be possible to detect an infestation before it occurs. Early detection of pest insects using pheromone traps can also lessen damage to agriculture and other plants.
+                   These traps are spaced out across farms. Powdered pheromone inside these traps lures insects, and a strong glue on the outside traps them as soon as they land. When used along with a neem spray, these eliminate the need for synthetic pesticides.
+
+
                     </p>
                 </div>
                 <div className = {progressiveStyles.right}>

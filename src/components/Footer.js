@@ -15,17 +15,11 @@ export default function Footer()
             </div> 
             <div className = {FooterStyles.section2}>
             <h1>Navigation</h1>    
-            <Link to = "/OurJourney">Our Journey</Link>
             <Link to = "/Farmers">Our Farmers</Link>
-            <Link to = "/Stories">Stories</Link>
-            <Link to ="/Traceability">Traceability</Link>
+            <Link to = "/Blog">Our Blogs</Link>
+            <Link to ="/Traceable">Traceability</Link>
             </div>        
-            <div className = {FooterStyles.section3}>
-                <h1>Company</h1>
-                <Link to = "/">Terms of Use</Link>
-                <Link to = "/">FAQ</Link>
-                <Link to = "/">Privacy Policy</Link>
-            </div>
+           
             <div className = {FooterStyles.section4}>
                 <h1>Products</h1>
                 <Link>Fruits</Link>
@@ -33,7 +27,7 @@ export default function Footer()
                 <Link>Groceries</Link>
                 <Link>Ayurveda</Link>
             </div>
-            <div className = {FooterStyles.social}>
+            {/* <div className = {FooterStyles.social}>
                 <h1>Follow Us</h1>
                 <div className = {FooterStyles.links}>
                 <Link to = "/">
@@ -47,7 +41,7 @@ export default function Footer()
                     <AiFillTwitterSquare />
                 </Link>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }   

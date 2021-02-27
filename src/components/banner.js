@@ -8,19 +8,14 @@ export default function Banner(){
     return(
         <div className = {bannerStyles.hero}>
             <div className = {bannerStyles.heroLeft}>
-                <h1>Fresh Greens<br></br> Now Traceable.</h1>
+                <h1>Fresh Produce<br></br> Now Traceable.</h1>
             
 
-                <p>We deliver the freshest produce in India.<br></br> From farm to table.</p>
-          
-                    <div className = {bannerStyles.buttons}>
-                    <Link to ="#grid" className = {bannerStyles.btn}>
-                    Learn More <CgArrowLongRight className = {bannerStyles.arrow} />
-                </Link>
-                <Link to ="/Traceability" className = {bannerStyles.btn2}>
-                    Trace Your Food <CgArrowLongRight className = {bannerStyles.arrow} />
-                </Link>
-                    </div>
+                <p>Trace farm-fresh produce back to its exact place & time of harvest.
+                
+                   <span id ="break">Scan a QR code to get started.</span>
+</p>
+                  
                
             </div>
             <div className = {bannerStyles.heroRight}>

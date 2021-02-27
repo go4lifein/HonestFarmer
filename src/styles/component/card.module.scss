@@ -5,6 +5,7 @@
 $font1:"CircularStd";
 $font2: "NueBold";
 $lightblue: #d1d8de;
+$lightgrey:#e6e6e6;
 
   .card{
     font-family: $font1;
@@ -13,21 +14,30 @@ $lightblue: #d1d8de;
     
     background-color: white;
     align-items: center;
-    width: 100%;
-    height: 70vh;
-    padding-left: 2%;
+    background-color: $lightgrey;
+    border-radius: 10px;
+    width: 25%; 
+    height: 290px;
+    margin-left: 2%;
+    padding-top: 30px;
+    margin-top: 3%;
     @include txl {
         padding-bottom: -10%;
 
     }
+    @include lg {
+        width: 30%;
+    }
     @include md {
-        padding-top: 10%;
+        width: 250px;
+        height: 300px;
     }
     @include sm {
-        padding-top: 15%;
+      margin-top: 5%;
     }
     h1{
         font-weight: 400;
+        font-size: 1.5rem;
         padding-top: 5%;
         @include md {
             font-size: 1.7rem;
@@ -43,9 +53,14 @@ $lightblue: #d1d8de;
 
     }
     p{
-        text-align: justify;
+        // text-align: justify;
         width: 45%;
         color: #9a9a9a;
+        font-size: 0.8rem;
+        @include lg {
+            width: 60%;
+            padding-left: 5%;
+        }
         @include md {
             width: 60%;
             font-size: 0.9rem;

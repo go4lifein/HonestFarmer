@@ -9,6 +9,11 @@ import markerImage from '../images/marker.webp';
 
 const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN;
 
+function convertTZ(date, tzString) {
+  return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", {timeZone: tzString}));   
+}
+
+
 function Report({report}) {
 
   const {Farmer, Product, harvestTime} = report;
@@ -58,7 +63,7 @@ function Report({report}) {
                 <div style={{fontFamily: 'monospace'}}>
                   Harvested on <br />
                   {new Date(harvestTime).toDateString()} <br />
-                  at {new Date(harvestTime).toTimeString().substr(0, 8)}
+                  at {new Date(harvestTime).toUTCString().substr(17, 8)}
                 </div>
               </div>
             </div>
