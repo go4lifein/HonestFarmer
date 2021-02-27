@@ -8,11 +8,13 @@ export default function Banner(){
     return(
         <div className = {bannerStyles.hero}>
             <div className = {bannerStyles.heroLeft}>
-                <h1>Fresh Greens<br></br> Now Traceable.</h1>
+                <h1>Fresh Produce<br></br> Now Traceable.</h1>
             
 
-                <p>We deliver the freshest produce in India.<br></br> From farm to table.</p>
-          
+                <p>Trace farm-fresh produce back to its exact place & time of harvest.
+                
+                   <span id ="break">Scan a QR code to get started.</span>
+</p>
                   
                
             </div>

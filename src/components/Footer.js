@@ -15,10 +15,9 @@ export default function Footer()
             </div> 
             <div className = {FooterStyles.section2}>
             <h1>Navigation</h1>    
-            <Link to = "/OurJourney">Our Journey</Link>
             <Link to = "/Farmers">Our Farmers</Link>
-            <Link to = "/Stories">Stories</Link>
-            <Link to ="/Traceability">Traceability</Link>
+            <Link to = "/Blog">Our Blogs</Link>
+            <Link to ="/Traceable">Traceability</Link>
             </div>        
            
             <div className = {FooterStyles.section4}>
