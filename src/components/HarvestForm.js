@@ -9,8 +9,7 @@ class HarvestForm extends Component {
         this.state = {
             productId: null,
             farmerId: null,
-            harvestTime: null
-
+            harvestTime: new Date().toISOString().substr(0, 16)
         }
     }
 
@@ -27,6 +26,7 @@ class HarvestForm extends Component {
 
     }
     onChange = (e) => {
+        console.log(e.target.value)
         this.setState({
             [e.target.name]: e.target.value
         });
@@ -46,24 +46,16 @@ class HarvestForm extends Component {
         const {
             productId, farmerId, harvestTime
         } = this.state;
-        console.log(farmerId, productId, harvestTime)
         let disabled = !(farmerId && productId && harvestTime);
-
+        
         let farmer = allFarmers.find(item => item.id == farmerId);
         let product = allProducts.find(item => item.id == productId);
-        console.log(farmer, product);
 
         return (
             <div className="hform">
                 <form id="harvestform" className="form_harvest" onSubmit={this.onSubmit}>
-                    <div className="flex center middle">
+                    <div className="center middle">
                         
-                        {/* {
-                            farmer &&
-                            <div className="p-10">
-                                <img className="avatar" src={farmer.image} alt="farmer" />
-                            </div>
-                        } */}
                         <div
                             className="row1"
                             style={{
@@ -92,7 +84,7 @@ class HarvestForm extends Component {
                                                 key={farmer.id.toString()}
                                                 value={farmer.id}
                                             >
-                                                {farmer.name}
+                                                {farmer.name} - {farmer.subregion}
                                             </option>
                                         )
                                     })
@@ -100,14 +92,22 @@ class HarvestForm extends Component {
                             </select>
 
                         </div>
-                    </div>
-                    <div className="flex center middle">
-                        {/* {
-                            product &&
-                            <div className="p-10">
-                                <img className="avatar" src={product.image} alt="product" />
+                        
+                        <div className="p-10">
+                        {
+                            farmer &&
+                            <div className="flex middle">
+                                <img className="avatar" src={farmer.image} alt="farmer" />
+                                <div className="p-10">
+                                    {farmer.name} <br />
+                                    {farmer.subregion}, {farmer.region}
+                                </div>
                             </div>
-                        } */}
+                        }
+                        </div>
+                    </div>
+                    <div className="center middle">
+                        
                         <div
                             className="row2"
 
@@ -144,6 +144,19 @@ class HarvestForm extends Component {
                                 }
                             </select>
                         </div>
+                        
+                        <div className="p-10">
+                        {
+                            product &&
+                            <div className="flex middle">
+                                <img className="avatar" src={product.image} alt="product" />
+                                <div className="p-10">
+                                    {product.name} <br />
+                                    {product.packSize}
+                                </div>
+                            </div>
+                        }
+                        </div>
                     </div>
                     <div className="row2">
                         <label
@@ -154,7 +167,7 @@ class HarvestForm extends Component {
                         </label>
                         <input
                             type="datetime-local"
-                            // value={harvestTime}
+                            value={harvestTime}
                             id="htime"
                             name="harvestTime"
                             required
