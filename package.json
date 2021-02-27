@@ -1,9 +1,9 @@
 {
   "name": "honest-farmer",
   "private": true,
-  "description": "India's fastest Agricultural Supply Chain",
+  "description": "India's Fastest Agricultural Supply Chain",
   "version": "0.2.0",
-  "author": "Ankit Vat  <ankit.vat@go4life.in>",
+  "author": "Ankit Vat <ankit.vat@go4life.in>",
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "axios": "^0.21.1",
