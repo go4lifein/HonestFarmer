@@ -16,9 +16,13 @@ export default function ZeroWaste()
                 <p>Ensuring nothing gets wasted.</p>
             </div>
             <div className = {zeroStyles.section1}>
-                <h1>Our Zero Waste Policy</h1>
+                <h1>Sustainable practices, zero food wastage.</h1>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                To reduce food wastage, we harvest fruits & vegetables after carefully analysing customer demand. Our farm-fresh produce is available on Swiggy Instamart.
+            <br></br>
+            <br></br>
+            We take utmost care not to harvest more than we can sell. Any food items left unsold are taken back from stores, and donated to the needy. Items with extremely short shelf life are taken back to our farms, and composted to make fertiliser.
+
                 </p>
             </div>
             <Footer />

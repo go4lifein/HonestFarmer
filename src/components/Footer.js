@@ -6,6 +6,7 @@ import {AiOutlineFacebook} from "@react-icons/all-files/ai/AiOutlineFacebook"
 import {AiOutlineInstagram} from "@react-icons/all-files/ai/AiOutlineInstagram"
 import {AiOutlineLinkedin} from "@react-icons/all-files/ai/AiOutlineLinkedin"
 import {AiFillTwitterSquare} from "@react-icons/all-files/ai/AiFillTwitterSquare"
+import {AiOutlineMediumWorkmark} from "@react-icons/all-files/ai/AiOutlineMediumWorkmark"
 export default function Footer()
 {
     return(
@@ -27,21 +28,21 @@ export default function Footer()
                 <Link>Groceries</Link>
                 <Link>Ayurveda</Link>
             </div>
-            {/* <div className = {FooterStyles.social}>
+            <div className = {FooterStyles.social}>
                 <h1>Follow Us</h1>
                 <div className = {FooterStyles.links}>
-                <Link to = "/">
+                <a href = "https://www.facebook.com/HonestFarmerCo/">
                     <AiOutlineFacebook />
-                </Link>
-                <Link to  = "/">
+                </a>
+                <a href  = "https://www.instagram.com/honestfarmerco/">
                     <AiOutlineInstagram />
-                </Link>
-                <Link to = "/"><AiOutlineLinkedin /></Link>
-                <Link to  = "/">
-                    <AiFillTwitterSquare />
-                </Link>
+                </a>
+                <a href = "https://medium.com/@HonestFarmerCo">
+                    <AiOutlineMediumWorkmark className = {FooterStyles.medium} />
+                </a>
+                
                 </div>
-            </div> */}
+            </div> 
         </div>
     )
 }   

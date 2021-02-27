@@ -269,5 +269,13 @@ $lightblack : #000;
                 font-size: 1.4rem;
             }
         }
+        .medium{
+            font-size:4rem;
+            margin-top: -18%;
+
+            @include lg {
+                margin-top: -28%;
+            }
+        }
     }
 }
