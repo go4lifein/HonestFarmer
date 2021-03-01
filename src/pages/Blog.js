@@ -4,7 +4,7 @@ import Header from "../components/Header.js"
 import Footer from "../components/Footer.js"
 import Copyright from "../components/Copyright.js"
 import storiesStyles from "../styles/pages/story.module.scss";
-import { Helmet } from 'react-helmet'
+import  Helmet  from 'react-helmet'
 export default function StoriesPage()
 {
     return(

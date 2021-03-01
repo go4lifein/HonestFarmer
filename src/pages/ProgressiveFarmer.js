@@ -5,12 +5,14 @@ import {Link} from "gatsby"
 import polyhouse from "../images/polyhouse.png"
 import farm from "../images/farm.png"
 import trap from "../images/trap.png"
+import Helmet from 'react-helmet'
 
 
 export default function ProgressiveFarmer()
 {
     return(
         <div className = {progressiveStyles.progressive}>
+            <Helmet title="Progressive Farmer" defer={false} />
             <Layout>
             <div className = {progressiveStyles.innercontent}>
             <p><Link to = "/">Home</Link> / Progressive Farmers</p>

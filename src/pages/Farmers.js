@@ -5,13 +5,14 @@ import Footer from "../components/Footer.js"
 import Card from "../components/Card.js"
 import Copyright from "../components/Copyright.js"
 import productStyles from "../styles/pages/products.module.scss"
-
+import Helmet from 'react-helmet'
 import farmersData from '../DummyData/farmer.js'
 
 
 export default function Farmers() {
   return(
     <div className = {productStyles.products}>
+      <Helmet title="Our Farmers" defer={false} />
       <Header />
       <div className = {productStyles.innercontent}>
         <p>

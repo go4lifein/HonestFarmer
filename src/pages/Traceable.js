@@ -7,13 +7,13 @@ import traceStyles from "../styles/pages/trace.module.scss"
 import qr from "../images/qrcode.png"
 import qr2 from "../images/qr2.png"
 import qr3 from "../images/qr3.png"
-import { Helmet } from 'react-helmet'
+import  Helmet  from 'react-helmet'
 
 export default function Trace()
 {
     return(
         <div className = {traceStyles.trace}>
-            <Helmet title="Trace Youre Food" defer={false} />
+            <Helmet title="Trace Your Food" defer={false} />
             <Header />
             <div className = {traceStyles.innercontent}>
         
