@@ -15,26 +15,28 @@ $font2 :'HK Grotesk';
 
 
   .mapsimage{
-      padding-left: 1%;
+      
       margin-top: 1.1%;
       padding-right: 0.9%;
+      width: 99.2%;
+      height: 450px;
       @include txl {
-          width: 860px;
-          padding-left: 2.1%;
+        width: 98%;
+         padding-left: 1.1%;
       }
       @include lg {
-          width: 640px;
+          width: 98%;
           height: 295px;
       }
       @include md {
-          width: 500px;
+          
           height: 223px;
       }
       @include sm {
-        height: 30vh;
+        height: 140px;
         width: 98%;
         padding-top: 2.1%;
-        margin-left: -1%;
+  
       }
       
   }

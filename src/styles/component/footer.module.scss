@@ -163,6 +163,10 @@ $lightblack : #000;
         margin-top: 4%;
         height: 40vh;
         width: 30%;
+
+        .disabled{
+            color: #9c9c9c;
+        }
         @include lg {
             margin-top: 6% ;
         }

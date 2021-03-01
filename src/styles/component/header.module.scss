@@ -70,7 +70,7 @@ $offwhite: #f5f5f5;
        
 
     .navlink{
-        padding-left: 55%;
+        padding-left: 70%;
         padding-top: 2%;
         z-index: 10;
         display: flex;
@@ -79,16 +79,12 @@ $offwhite: #f5f5f5;
         width: 100%;
         
         @include txl {
-            padding-left: 54%;
+            padding-left: 64%;
             
         }
-        @include lg {
-            padding-left: 48%;
-           
-        }
+        
         @include md {
-            padding-left: 40%;
-            
+            padding-left: 60%;
         }
         @include sm {   
             position: absolute;
