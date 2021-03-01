@@ -1,15 +1,15 @@
 {
   "name": "honest-farmer",
   "private": true,
-  "description": "India's fastest Agricultural Supply Chain",
+  "description": "India's Fastest Agricultural Supply Chain",
   "version": "0.2.0",
-  "author": "Ankit Vat  <ankit.vat@go4life.in>",
+  "author": "Ankit Vat <ankit.vat@go4life.in>",
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "axios": "^0.21.1",
     "babel-plugin-styled-components": "^1.12.0",
     "classnames": "^2.2.6",
-    "gatsby": "^2.25.0",
+    "gatsby": "2.25.0",
     "gatsby-image": "^2.5.0",
     "gatsby-plugin-google-analytics": "^2.11.0",
     "gatsby-plugin-manifest": "^2.6.1",

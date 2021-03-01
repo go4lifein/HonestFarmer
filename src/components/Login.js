@@ -4,16 +4,16 @@ import {loginAdmin} from '../api/admin.js'
 import Header from "./Header.js"
 import "../styles/component/form.scss"
 
-
-
 class Login extends Component{
-    state= {
-        email: '',
-        password: ''
+    constructor(props) {
+        super(props);
+        this.state = {
+            email: '',
+            password: ''
+        }
     }
 
-
-    handleSubmit = () =>{
+    handleSubmit = () => {
         let {email , password} = this.state;
         loginAdmin({email , password})
         .then(res =>{
@@ -22,7 +22,7 @@ class Login extends Component{
             setRequestAuthHeader(token);
             
             document.location.reload();
-            document.location.replace('/Admin');
+            // document.location.replace('/Admin');
         })
         .catch(err => alert("Invalid Username or Password"));
     }
@@ -41,7 +41,7 @@ class Login extends Component{
                 setRequestAuthHeader(token);
                 
                 document.location.reload();
-                document.location.replace('/Admin');
+                // document.location.replace('/Admin');
             })
             .catch(err => alert("Invalid Username or Password")) 
           }

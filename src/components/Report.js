@@ -1,18 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import MapGL, {Marker} from 'react-map-gl';
 import {Link} from 'gatsby'
 import "../styles/report.scss";
-import headerStyles from "../styles/component/header.module.scss";
 import Logo from "../assets/svgs/logo.svg"
 
 import markerImage from '../images/marker.webp';
 
 const MAPBOX_TOKEN = process.env.REACT_APP_MAPBOX_TOKEN;
-
-function convertTZ(date, tzString) {
-  return new Date((typeof date === "string" ? new Date(date) : date).toLocaleString("en-US", {timeZone: tzString}));   
-}
-
 
 function Report({report}) {
 
@@ -28,7 +22,7 @@ function Report({report}) {
     <div className="relative" id="report">
       <div className="absolute" style={{top: 10, left: 10, zIndex: 12, backgroundColor: 'rgba(0, 0, 0, 0.2)', borderRadius: 4}}>
         <Link to ="/" >
-          <Logo style={{width: 100}} />
+          <Logo style={{width: 100}} alt="honest-farmer" />
         </Link>
       </div>
       <MapGL
@@ -56,7 +50,7 @@ function Report({report}) {
           <div>
             <div className="farmer">
               <div className="avatar">
-                <img src={Product.image} alt="product" />
+                <img src={Product.image} alt={Product.name} />
               </div>
               <div className="content">
                 <div className="title">{Product.name}</div>
@@ -75,7 +69,7 @@ function Report({report}) {
           longitude={Number(Farmer.longitude)}
           offsetLeft={-20} offsetTop={-10}
         >
-          <img src={markerImage} width={40} />
+          <img src={markerImage} width={40} alt="pin" />
           <div className="radar-marker">
 
           </div>
@@ -83,7 +77,7 @@ function Report({report}) {
             <div className="farmer">
             
               <div className="avatar">
-                <img src={Farmer.image} alt="farmer" />
+                <img src={Farmer.image} alt={Farmer.name} />
               </div>
               <div className="content">
                 <div className="title">{Farmer.name}</div>

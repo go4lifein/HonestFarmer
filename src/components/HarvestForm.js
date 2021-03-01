@@ -26,7 +26,6 @@ class HarvestForm extends Component {
 
     }
     onChange = (e) => {
-        console.log(e.target.value)
         this.setState({
             [e.target.name]: e.target.value
         });
@@ -48,6 +47,9 @@ class HarvestForm extends Component {
         } = this.state;
         let disabled = !(farmerId && productId && harvestTime);
         
+        allFarmers = allFarmers.sort((a, b) => a.name.localeCompare(b.name));
+        allProducts = allProducts.sort((a, b) => a.name.localeCompare(b.name));
+
         let farmer = allFarmers.find(item => item.id == farmerId);
         let product = allProducts.find(item => item.id == productId);
 
