@@ -4,11 +4,13 @@ import Header from "../components/Header.js"
 import Footer from "../components/Footer.js"
 import Copyright from "../components/Copyright.js"
 import zeroStyles from "../styles/pages/zero.module.scss"
+import { Helmet } from 'react-helmet'
 
 export default function ZeroWaste()
 {
     return(
         <div className = {zeroStyles.zero}>
+            <Helmetmet title="Zero Waste" defer={false} />
             <Header />
             <div className = {zeroStyles.innercontent}>
                 <p><Link to = "/">Home</Link> / Zero Waste</p>
