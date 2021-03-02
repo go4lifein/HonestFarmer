@@ -15,7 +15,7 @@ export default function StoriesPage()
         <div className = {storiesStyles.innercontent}>
             <p><Link to = "/">Home</Link> / Stories</p>
             <h1>Stories</h1>
-            <a href = "https://medium.com/@HonestFarmerCo" className = {storiesStyles.mediumlink}>Read more about us.</a>
+            <a href = "https://medium.com/@HonestFarmerCo" target = "_blank" className = {storiesStyles.mediumlink}>Read more about us.</a>
         </div>
 
         <div className = {storiesStyles.section1}>
@@ -35,7 +35,7 @@ export default function StoriesPage()
                     
               </p>  
 
-                <a href = "https://medium.com/@HonestFarmerCo/the-abandoned-indian-farmer-79fd73ece099" className = {storiesStyles.med_link}>Read More.</a>
+                <a href = "https://medium.com/@HonestFarmerCo/the-abandoned-indian-farmer-79fd73ece099" target = "_blank" className = {storiesStyles.med_link}>Read More.</a>
 
             
         </div>
