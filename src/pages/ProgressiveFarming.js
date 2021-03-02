@@ -12,11 +12,11 @@ export default function ProgressiveFarmer()
 {
     return(
         <div className = {progressiveStyles.progressive}>
-            <Helmet title="Progressive Farmer" defer={false} />
+            <Helmet title="Progressive Farming" defer={false} />
             <Layout>
             <div className = {progressiveStyles.innercontent}>
-            <p><Link to = "/">Home</Link> / Progressive Farmers</p>
-            <h1>Progressive Farmers</h1>
+            <p><Link to = "/">Home</Link> / Progressive Farming</p>
+            <h1>Progressive Farming</h1>
             <p>Know more about Progressive Farming.</p>
         </div>
             <div className = {progressiveStyles.section1}>

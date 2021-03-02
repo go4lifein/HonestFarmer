@@ -9,8 +9,8 @@ export default function Grid()
             
             <div className = {gridStyles.section1}>
                
-                <Link to ="/ProgressiveFarmer" className = {gridStyles.row1}>
-                <h1>Progressive Farmers</h1>
+                <Link to ="/ProgressiveFarming" className = {gridStyles.row1}>
+                <h1>Progressive Farming</h1>
                 </Link>
                
                 <Link to = "/Traceable" className = {gridStyles.row2}>
