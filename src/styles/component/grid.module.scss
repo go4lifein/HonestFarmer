@@ -10,17 +10,18 @@ $font2:'CircularStd';
     display: flex;
     flex-direction: column;
     padding-left: 3%;
+    margin-top: -10%;
     @include txl{
         padding-left: 4%;
     
     }
     @include lg {
         padding-left: 4%;
-        margin-top: -5%;
+        margin-top: -25%;
     }
     @include md {
         position:relative;
-        margin-top: -25%;
+        margin-top: -30%;
       
     }
     @media (height: 1024px)
@@ -28,12 +29,9 @@ $font2:'CircularStd';
     margin-top: -40%;
   }
     @include sm {
-        margin-top: 15%;
+        margin-top: -45%;
     }
-    @include xsm {
-        margin-top: 5%;
-    }
-
+    
    
 
     .section1{
@@ -84,7 +82,7 @@ $font2:'CircularStd';
                     text-transform: uppercase;
                     padding-left:30px;
                     padding-top: 15px;
-                    color: white;
+                    color: black;
                 }
             }
             
@@ -126,7 +124,7 @@ $font2:'CircularStd';
                 text-transform: uppercase;
                 padding-left:30px;
                 padding-top: 15px;
-                color: white;
+                color: black;
             }
         }
     }
@@ -172,7 +170,7 @@ $font2:'CircularStd';
                 text-transform: uppercase;
                 padding-left:30px;
                 padding-top: 15px;
-                color: white;
+                color: black;
                 z-index: 5;
             }
           
@@ -212,7 +210,7 @@ $font2:'CircularStd';
                 text-transform: uppercase;
                 padding-left:30px;
                 padding-top: 15px;
-                color: white;
+                color: black;
                 z-index: 5;
             }
         }

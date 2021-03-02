@@ -4,8 +4,7 @@ import Logo from "../assets/svgs/hfwhite.svg"
 import FooterStyles from "../styles/component/footer.module.scss"
 import {AiOutlineFacebook} from "@react-icons/all-files/ai/AiOutlineFacebook"
 import {AiOutlineInstagram} from "@react-icons/all-files/ai/AiOutlineInstagram"
-import {AiOutlineLinkedin} from "@react-icons/all-files/ai/AiOutlineLinkedin"
-import {AiFillTwitterSquare} from "@react-icons/all-files/ai/AiFillTwitterSquare"
+
 import {AiOutlineMediumWorkmark} from "@react-icons/all-files/ai/AiOutlineMediumWorkmark"
 export default function Footer()
 {
@@ -17,16 +16,16 @@ export default function Footer()
             <div className = {FooterStyles.section2}>
             <h1>Navigation</h1>    
             <Link to = "/Farmers">Our Farmers</Link>
-            <Link to = "/Blog">Our Blogs</Link>
+            <Link to = "/Blog">Blog</Link>
             <Link to ="/Traceable">Traceability</Link>
             </div>        
            
             <div className = {FooterStyles.section4}>
                 <h1>Products</h1>
-                <Link>Fruits</Link>
-                <Link>Vegetables</Link>
-                <Link>Groceries</Link>
-                <Link>Ayurveda</Link>
+                <Link className = {FooterStyles.disabled}>Fruits</Link>
+                <Link className = {FooterStyles.disabled}>Vegetables</Link>
+                <Link className = {FooterStyles.disabled}>Groceries</Link>
+                <Link className = {FooterStyles.disabled}>Ayurveda</Link>
             </div>
             <div className = {FooterStyles.social}>
                 <h1>Follow Us</h1>

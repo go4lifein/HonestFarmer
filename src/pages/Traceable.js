@@ -22,17 +22,18 @@ export default function Trace()
                 <p>A guide for Traceability Program.</p>
             </div>
             <div className  = {traceStyles.section1}>
-                <h1>Our Traceable Food is what makes us special.</h1>
+                <h1>Scan the QR code on the packaging to find out exactly when & where your food came from. Here’s how it works:
+.</h1>
                 <div className = {traceStyles.grid1}>
                         <h1>Step 1: Look out for the QR code on any Pack.</h1>
                         <img src = {qr} alt = "qrcode" />
                     </div>  
                     <div className = {traceStyles.grid1}>
-                        <h1>Step 2: Scan the QR code with any scanner. </h1>
+                        <h1>Step 2: Use your phone’s camera or a scanner app to scan. </h1>
                         <img src = {qr2} alt = "qrcode2" />
                     </div> 
                     <div className = {traceStyles.grid1}>
-                        <h1>Step 3: Visit the URL for Real time traceability. </h1>
+                        <h1>Visit the URL that pops up to trace your food’s origin. See exactly when it was harvested, and which farm it came from. </h1>
                         <img src = {qr3} className = {traceStyles.qr3} alt = "qrcode2" />
                     </div>   
             </div>
