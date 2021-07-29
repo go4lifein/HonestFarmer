@@ -21,18 +21,14 @@ $lightgreen:#7ef792;
         padding-top: 10%;
         color: black;
         background-color: $lightgreen;
-        @include txl {
-            height: 280px;
-        }
         @include md {
-            height: 280vh;
+            height: 50vh;
             padding-top: 20%;
         }
         @include sm {
-            height: 250px;
+            height: 50vh;
             padding-top: 40%;
         }
-
 
         a{
             text-decoration: none;

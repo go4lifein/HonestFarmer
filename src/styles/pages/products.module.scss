@@ -21,15 +21,12 @@ $lightred:#ffb0b0;
         padding-top: 10%;
         color: black;
         background-color: $lightred;
-        @include txl {
-            height: 280px;
-        }
         @include md {
-            height: 280px;
+            height: 50vh;
             padding-top: 15%;
         }
         @include sm {
-            height: 250px;
+            height: 50vh;
             padding-top: 20%;
         }
 

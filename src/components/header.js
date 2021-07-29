@@ -18,7 +18,7 @@ export default function Header()
       <div className ={`${headerStyles.navlink} ${nav ? headerStyles.show : " "}` }>
       
         <Link to = "/Farmers">Our Farmers</Link>
-        <Link to = "/Blog"> Blog</Link>
+        <Link to = "/Blog">Our Blogs</Link>
         <Link to = "#footer">Contact</Link>
       </div>
       

@@ -26,7 +26,7 @@ class Admin extends React.Component {
 
   render() {
     const { admin, loading } = this.state;
-    
+
     return (
       <>
         {
@@ -34,7 +34,6 @@ class Admin extends React.Component {
           <Loading /> :
           <div id="admin">
             {admin ?
-              
               <div>
                 <AddReport />
               </div> :
