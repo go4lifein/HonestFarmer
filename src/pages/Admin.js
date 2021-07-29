@@ -23,10 +23,9 @@ class Admin extends React.Component {
     })
     .catch(err => this.setState({err: err, loading: false}));
   } 
-  
+
   render() {
     const { admin, loading } = this.state;
-    console.log("Hello");
     
     return (
       <>
