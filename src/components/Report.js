@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import MapGL, {Marker} from 'react-map-gl';
 import {Link} from 'gatsby'
 import "../styles/report.scss";
-import Logo from "../assets/svgs/logo.svg"
+import Logo from "../assets/svgs/g4lsvg.svg"
 
 import markerImage from '../images/marker.webp';
 
@@ -22,7 +22,7 @@ function Report({report}) {
     <div className="relative" id="report">
       <div className="absolute" style={{top: 10, left: 10, zIndex: 12, backgroundColor: 'rgba(0, 0, 0, 0.2)', borderRadius: 4}}>
         <Link to ="/" >
-          <Logo style={{width: 100}} alt="honest-farmer" />
+          <Logo style={{width: 80}} alt="honest-farmer" />
         </Link>
       </div>
       <MapGL
