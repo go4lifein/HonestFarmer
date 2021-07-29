@@ -6,8 +6,13 @@ import {CgArrowLongRight} from "@react-icons/all-files/cg/CgArrowLongRight"
 
 export default function Banner(){
     return(
-        <div className = {bannerStyles.hero}>
-            <div className = {bannerStyles.heroLeft}>
+        <div className = {bannerStyles.hero}
+        >
+            <div className = {bannerStyles.heroLeft}
+                data-sal="fade"
+                data-sal-delay="100"
+                data-sal-easing="ease"
+                data-sal-duration = "300">
                 <h1>Fresh Produce,<br></br> Now Traceable</h1>
             
 
@@ -19,8 +24,8 @@ export default function Banner(){
                
             </div>
             <div className = {bannerStyles.heroRight}>
-                
-                   </div>     
+            
+             </div>     
 
         </div>
     )

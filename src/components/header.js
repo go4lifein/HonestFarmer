@@ -9,7 +9,12 @@ export default function Header()
   const [nav , showNav] = useState(false)
   
   return(
-    <div className = {headerStyles.header}>
+    <div className = {headerStyles.header}
+    data-sal="fade"
+    data-sal-delay="50"
+    data-sal-easing="ease"
+    data-sal-duration = "300"
+    >
       <div className = {headerStyles.nav}>
       <Link to ="/" className= {headerStyles.logo}>
         <Logo />

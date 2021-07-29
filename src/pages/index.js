@@ -14,7 +14,7 @@ export default function IndexPage() {
     
       <div className = "container">
         <Helmet title="Honest Farmer" defer={false} />
-      <Header />
+      <Header/>
       <Banner  />
       <Grid />
      

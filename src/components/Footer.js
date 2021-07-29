@@ -19,7 +19,7 @@ export default function Footer()
             <Link to = "/Blog">Blog</Link>
             <Link to ="/Traceable">Traceability</Link>
             </div>        
-           
+          {/* 
             <div className = {FooterStyles.section4}>
                 <h1>Products</h1>
                 <Link className = {FooterStyles.disabled}>Fruits</Link>
@@ -27,16 +27,17 @@ export default function Footer()
                 <Link className = {FooterStyles.disabled}>Groceries</Link>
                 <Link className = {FooterStyles.disabled}>Ayurveda</Link>
             </div>
+          */}
             <div className = {FooterStyles.social}>
                 <h1>Follow Us</h1>
                 <div className = {FooterStyles.links}>
-                <a href = "https://www.facebook.com/HonestFarmerCo/">
+                <a href = "https://www.facebook.com/HonestFarmerCo/" target = "_blank">
                     <AiOutlineFacebook />
                 </a>
-                <a href  = "https://www.instagram.com/honestfarmerco/">
+                <a href  = "https://www.instagram.com/honestfarmerco/" target = "_blank">
                     <AiOutlineInstagram />
                 </a>
-                <a href = "https://medium.com/@HonestFarmerCo">
+                <a href = "https://medium.com/@HonestFarmerCo" target = "_blank">
                     <AiOutlineMediumWorkmark className = {FooterStyles.medium} />
                 </a>
                 
